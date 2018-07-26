@@ -1,0 +1,111 @@
+page-signup 
+{
+    .scroll-content
+    {
+        overflow-y:hidden!important;
+    }
+    .yg-signip-header
+    {
+        width:100%;
+        float: left;
+        box-sizing: border-box;
+    }
+    .header-md::after,
+    .header-wp::after,
+    .header-ios::after
+    {
+        background-image:none!important;
+    }
+     .yg-signip-header .toolbar-background-md,
+     .yg-signip-header .toolbar-background-ios,
+     .yg-signip-header .toolbar-background-wp
+    {
+        background:transparent!important;
+    }
+    .signup-inner-sec
+    {
+        width:100%;
+        float: left;
+        padding:0;
+        margin:0;
+    }
+    .signup-sub-inner-sec.grid 
+    {
+        width: 100%;
+        float: left;
+        padding: 10px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .sign-each-field.row 
+    {
+        float: left;
+        margin:5px 0;
+        padding: 0;
+        width: 100%;
+    }
+    .sign-up-each-input
+    {
+        float: left;
+        margin: 0;
+        padding: 0!important;
+        width: 100%;
+    }
+    .header-ios .toolbar-ios:last-child .toolbar-background-ios
+    {
+        border:none!important;
+    }
+    .input-field-y input.text-input.text-input-md,
+    .input-field-y input.text-input.text-input-ios,
+    .input-field-y input.text-input.text-input-wp
+    {
+        height: 35px;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        float: left;
+        margin: 0;
+        padding: 0 10px 0 30px;
+        box-sizing: border-box;
+        line-height: 20px;
+        font-size: 13px;
+        font-weight: 100;
+        background: #fff!important;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+    }
+    
+    .sign-register-here.col 
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .sign-up-header
+    {
+        font-size:15px;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        line-height:20px;
+        text-transform: capitalize;
+    }
+    .register-button {
+        width: 100%;
+        float: left;
+        box-shadow: none;
+        font-size: 13px;
+        margin: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: inherit;
+        padding: 10px;
+        line-height: 16px;
+        text-transform: capitalize;
+    }
+    
+}
