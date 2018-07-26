@@ -1,5 +1,9 @@
 page-signup 
 {
+    body
+    {
+        background-color:#e4198c;
+    }
     .scroll-content
     {
         overflow-y:hidden!important;
@@ -10,7 +14,7 @@ page-signup
         float: left;
         box-sizing: border-box;
     }
-    .header-md::after,
+    .header-md::after,*
     .header-wp::after,
     .header-ios::after
     {
@@ -28,19 +32,27 @@ page-signup
         float: left;
         padding:0;
         margin:0;
+        background:#e4198c;
+    }
+    .sign-up-outers
+    {
+        width:100%;
+        float: left;
+        padding:6px;
     }
     .signup-sub-inner-sec.grid 
     {
         width: 100%;
         float: left;
-        padding: 10px;
         margin: 0;
         box-sizing: border-box;
+        background:#fff;
+        border-radius:2px;
     }
     .sign-each-field.row 
     {
         float: left;
-        margin:5px 0;
+        margin:3px 0;
         padding: 0;
         width: 100%;
     }
@@ -60,19 +72,20 @@ page-signup
     .input-field-y input.text-input.text-input-wp
     {
         height: 35px;
-        border: 1px solid #ddd;
-        border-radius: 2px;
+        border: 1px solid #e4198c;
+        border-radius:3px;
         float: left;
         margin: 0;
-        padding: 0 10px 0 30px;
+        padding: 0 10px 0 25px;
         box-sizing: border-box;
         line-height: 20px;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 100;
         background: #fff!important;
         width: 100%;
         max-width: 100%;
         position: relative;
+        color:#666;
     }
     
     .sign-register-here.col 
@@ -87,25 +100,73 @@ page-signup
     }
     .sign-up-header
     {
-        font-size:15px;
+        font-size:14px;
         margin:0;
         padding:0;
         box-sizing: border-box;
         line-height:20px;
         text-transform: capitalize;
+        color:black;
     }
-    .register-button {
+    .sign-register-heres.col 
+    {
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .register-button 
+    {
         width: 100%;
         float: left;
         box-shadow: none;
-        font-size: 13px;
+        font-size: 12px;
         margin: 0;
         box-sizing: border-box;
         cursor: pointer;
         height: inherit;
-        padding: 10px;
+        padding:6px;
         line-height: 16px;
         text-transform: capitalize;
+        background-color:#e4198c;
+        color:#fff;
+    }
+    .fotter-sec.row 
+    {
+        width: 100%;
+        float: left;
+        position: absolute;
+        bottom: 0;
+        height: 30px;
+        background: #fff;
+    }
+   .signup-fotter-sec.col 
+   {
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    span.already-reg 
+    {
+        font-size: 11px;
+        float: left;
+        margin: 0;
+        padding: 0;
+        line-height: 16px;
+        color:#e4198c;
+    }
+    a.login-now 
+    {
+        cursor: pointer;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color:#e4198c!important;
     }
     
 }
