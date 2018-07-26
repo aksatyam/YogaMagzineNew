@@ -32,9 +32,12 @@ page-login
     }
     .login-up-outers
     {
-        width:100%;
+        width: 100%;
         float: left;
-        padding:6px;
+        padding: 6px;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-15%);
     }
     .login-sub-inner-sec.grid 
     {
@@ -117,6 +120,7 @@ page-login
         text-transform: capitalize;
         background-color:#e4198c;
         color:#fff;
+        margin-top:20px;
     }
     .fotter-sec.row 
     {
@@ -153,4 +157,19 @@ page-login
          padding: 0;
          color:#e4198c!important;
      }
+     .forget-outer-sec.row 
+     {
+        width: 100%;
+        float: left;
+     }
+     a.forget-password 
+     {
+        position: absolute;
+        right: 11px;
+        font-size: 10px;
+        cursor: pointer;
+        margin-top: -2px;
+        text-decoration: none;
+        color:#e4198c!important;
+    }
 }
