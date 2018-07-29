@@ -10,6 +10,9 @@ import { SignupPage} from '../pages/signup/signup';
 import { LatestIssuesPage } from '../pages/latest-issues/latest-issues';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ViewOffersPage } from '../pages/view-offers/view-offers';
+import { DealsPage } from '../pages/deals/deals';
+import { PosesPage } from '../pages/poses/poses';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     LoginPage,
     SignupPage,
-    LatestIssuesPage
+    LatestIssuesPage,
+    ViewOffersPage,
+    DealsPage,
+    PosesPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     LoginPage,
     SignupPage,
-    LatestIssuesPage
+    LatestIssuesPage,
+    ViewOffersPage,
+    DealsPage,
+    PosesPage
   ],
   providers: [
     StatusBar,

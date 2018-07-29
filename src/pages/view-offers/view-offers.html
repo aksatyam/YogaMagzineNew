@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-uppercase>view-offers</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-segment [(ngModel)]="offer">
+    <ion-segment-button value="beginner" text-uppercase>
+        beginner
+    </ion-segment-button>
+    <ion-segment-button value="intermediate" text-uppercase>
+        intermediate
+    </ion-segment-button>
+    <ion-segment-button value="expert" text-uppercase>
+        expert
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="offer">
+    <div *ngSwitchCase="'beginner'">
+        Beginer
+    </div>
+    <div *ngSwitchCase="'intermediate'">
+        Intermediate
+    </div>
+    <div *ngSwitchCase="'expert'">
+      Expert
+    </div>
+  </div>
+
+</ion-content>

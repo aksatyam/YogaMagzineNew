@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage} from '../pages/signup/signup';
 import { LatestIssuesPage } from '../pages/latest-issues/latest-issues';
+import { PosesPage } from '../pages/poses/poses';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,7 +26,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
+      { title: 'List', component: PosesPage },
       { title: 'Login', component: LoginPage },
       { title: 'SignUp', component: SignupPage },
       { title: 'LatestIssues', component: LatestIssuesPage}

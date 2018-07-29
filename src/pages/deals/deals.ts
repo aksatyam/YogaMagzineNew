@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-latest-issues',
-  templateUrl: 'latest-issues.html',
+  selector: 'page-deals',
+  templateUrl: 'deals.html',
 })
-export class LatestIssuesPage {
-  public selectedTab:any='Latest Issue';
+export class DealsPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LatestIssuesPage');
+    console.log('ionViewDidLoad DealsPage');
   }
 
 }
