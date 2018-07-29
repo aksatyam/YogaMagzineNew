@@ -1,3 +1,131 @@
-page-deals {
+page-deals 
+{ 
+    .y-home-header .toolbar-background-md,
+    .y-home-header .toolbar-background-wp,
+    .y-home-header .toolbar-background-ios
+    {
+        background-color:#e4198c!important;
+    }
+    .y-home-header .toolbar-title-md,
+    .y-home-header .toolbar-title-wp,
+    .y-home-header .toolbar-title-ios
+    {
+        height: 60px;
+        width: 100px;
+        padding-top: 16px;
+        float: left;
+    }
+    .y-home-header .bar-button-default-md,
+    .y-home-header .bar-button-default-ios,
+    .y-home-header .bar-button-default-wp
+    
+    {
+        color:#fff!important;
+    }
+    .y-home-header .toolbar-title-md,
+    .y-home-header .toolbar-title-wp,
+    .y-home-header .toolbar-title-ios
+    {
+        font-size:13px!important;
+        color:#fff!important;
+        font-weight:100!important;
+    }
+    .y-home-header .toolbar-title-ios
+    {
+        text-align:left!important;
+    }
+    .y-home-header .toolbar-ios ion-title
+    {
+        padding:0 0 0 60px;
+    }
+    .deals-sub-inner-sec.grid 
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding:5px;
+    }
+    .deals-each-row.row 
+    {
+        width: 100%;
+        float: left;
+        margin:0px 0px 5px 0px;
+        padding:0px;
+        background-color:#fceff8;
+        border-radius:3px;
+        position: relative;
+        max-height: 88px;
+        min-height:88px;
+    }
+    .deals-each-elements
+    {
+        margin:0!important;
+        padding:0!important;
+    }
 
+    span.deals-each-images 
+    {
+        height: 88px;
+        float: left;
+        width: 88px;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        border:1px solid #e6198b;
+        border-radius:3px 0 0 3px;
+    }
+    span.deals-each-images img
+    {
+        max-width:100%;
+        float: left;
+        width:100%;
+    }
+    .deals-text-elements
+    {
+        float: left;
+        padding: 15px 20px 15px 0px;
+    }
+    span.deals-each-text-elements 
+    {
+        width: calc(100% - 15px);
+        float: left;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    span.deals-inner-sec {
+        width: 100%;
+        float: left;
+        color: #e21c86;
+        line-height: 18px;
+        font-size: 13px;
+        margin: 0;
+        box-sizing: border-box;
+        font-weight: 100;
+    }
+    span.get-now {
+        height: 80px;
+        width: 80px;
+        float: left;
+        cursor: pointer;
+        margin-top: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    span.forward-now {
+        height: 10px;
+        width: 10px;
+        float: left;
+        position: absolute;
+        margin-top: 20px;
+        right: 14px;
+        cursor: pointer;
+
+    }
 }
+

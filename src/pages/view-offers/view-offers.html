@@ -1,34 +1,227 @@
-<ion-header>
-
+<ion-header class="y-home-header">
   <ion-navbar>
-    <ion-title text-uppercase>view-offers</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="items-list">
+      <img src="assets/imgs/logo_youga.png" class="logo-images">
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content>
-  <ion-segment [(ngModel)]="offer">
-    <ion-segment-button value="beginner" text-uppercase>
-        beginner
+  <ion-segment [(ngModel)]="offer" class="views-tabs-sec">
+    <ion-segment-button value="beginner" text-uppercase class="views-tabs-seg">
+      beginner
     </ion-segment-button>
-    <ion-segment-button value="intermediate" text-uppercase>
-        intermediate
+    <ion-segment-button value="intermediate" text-uppercase class="views-tabs-seg">
+      intermediate
     </ion-segment-button>
-    <ion-segment-button value="expert" text-uppercase>
-        expert
+    <ion-segment-button value="expert" text-uppercase class="views-tabs-seg">
+      expert
     </ion-segment-button>
   </ion-segment>
 
-  <div [ngSwitch]="offer">
-    <div *ngSwitchCase="'beginner'">
-        Beginer
+  <div [ngSwitch]="offer" class="tab-switch-outers">
+    <div *ngSwitchCase="'beginner'" class="each-segment-tabs">
+      <ion-grid class="deals-sub-inner-sec">
+        <ion-row class="deals-each-row">
+          <ion-col col-4 class="deals-each-elements">
+            <span class="deals-each-images">
+              <img src="./../../assets/imgs/youga.jpg" />
+            </span>
+
+          </ion-col>
+          <ion-col col-8 class="deals-text-elements">
+            <span class="deals-each-text-elements">
+              <span class="deals-inner-sec">
+                PUPPY POSE
+              </span>
+              <span class="get-now">
+                <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
+              </span>
+              <span class="forward-now">
+                <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
+              </span>
+
+            </span>
+          </ion-col>
+        </ion-row>
+        <ion-row class="deals-each-row">
+          <ion-col col-4 class="deals-each-elements">
+            <span class="deals-each-images">
+              <img src="./../../assets/imgs/youga.jpg" />
+            </span>
+
+          </ion-col>
+          <ion-col col-8 class="deals-text-elements">
+            <span class="deals-each-text-elements">
+              <span class="deals-inner-sec">
+                PUPPY POSE
+              </span>
+              <span class="get-now">
+                <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
+              </span>
+              <span class="forward-now">
+                <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
+              </span>
+
+            </span>
+          </ion-col>
+        </ion-row>
+        <ion-row class="deals-each-row">
+          <ion-col col-4 class="deals-each-elements">
+            <span class="deals-each-images">
+              <img src="./../../assets/imgs/youga.jpg" />
+            </span>
+
+          </ion-col>
+          <ion-col col-8 class="deals-text-elements">
+            <span class="deals-each-text-elements">
+              <span class="deals-inner-sec">
+                PUPPY POSE
+              </span>
+              <span class="get-now">
+                <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
+              </span>
+              <span class="forward-now">
+                <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
+              </span>
+
+            </span>
+          </ion-col>
+        </ion-row>
+        <ion-row class="deals-each-row">
+          <ion-col col-4 class="deals-each-elements">
+            <span class="deals-each-images">
+              <img src="./../../assets/imgs/youga.jpg" />
+            </span>
+
+          </ion-col>
+          <ion-col col-8 class="deals-text-elements">
+            <span class="deals-each-text-elements">
+              <span class="deals-inner-sec">
+                PUPPY POSE
+              </span>
+              <span class="get-now">
+                <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
+              </span>
+              <span class="forward-now">
+                <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
+              </span>
+
+            </span>
+          </ion-col>
+        </ion-row>
+        <ion-row class="deals-each-row">
+          <ion-col col-4 class="deals-each-elements">
+            <span class="deals-each-images">
+              <img src="./../../assets/imgs/youga.jpg" />
+            </span>
+
+          </ion-col>
+          <ion-col col-8 class="deals-text-elements">
+            <span class="deals-each-text-elements">
+              <span class="deals-inner-sec">
+                PUPPY POSE
+              </span>
+              <span class="get-now">
+                <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
+              </span>
+              <span class="forward-now">
+                <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
+              </span>
+
+            </span>
+          </ion-col>
+        </ion-row>
+
+
+
+      </ion-grid>
     </div>
-    <div *ngSwitchCase="'intermediate'">
-        Intermediate
+    <div *ngSwitchCase="'intermediate'" class="each-segment-tabs">
+      <ion-grid class="deals-sub-inner-sec">
+        <ion-row class="deals-each-row">
+          <ion-col col-4 class="deals-each-elements">
+            <span class="deals-each-images">
+              <img src="./../../assets/imgs/youga.jpg" />
+            </span>
+
+          </ion-col>
+          <ion-col col-8 class="deals-text-elements">
+            <span class="deals-each-text-elements">
+              <span class="deals-inner-sec">
+                PUPPY POSE
+              </span>
+              <span class="get-now">
+                <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
+              </span>
+              <span class="forward-now">
+                <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
+              </span>
+
+            </span>
+          </ion-col>
+        </ion-row>
+        <ion-row class="deals-each-row">
+          <ion-col col-4 class="deals-each-elements">
+            <span class="deals-each-images">
+              <img src="./../../assets/imgs/youga.jpg" />
+            </span>
+
+          </ion-col>
+          <ion-col col-8 class="deals-text-elements">
+            <span class="deals-each-text-elements">
+              <span class="deals-inner-sec">
+                PUPPY POSE
+              </span>
+              <span class="get-now">
+                <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
+              </span>
+              <span class="forward-now">
+                <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
+              </span>
+
+            </span>
+          </ion-col>
+        </ion-row>
+
+
+
+
+      </ion-grid>
     </div>
-    <div *ngSwitchCase="'expert'">
-      Expert
+    <div *ngSwitchCase="'expert'" class="each-segment-tabs">
+      <ion-grid class="deals-sub-inner-sec">
+        <ion-row class="deals-each-row">
+          <ion-col col-4 class="deals-each-elements">
+            <span class="deals-each-images">
+              <img src="./../../assets/imgs/youga.jpg" />
+            </span>
+
+          </ion-col>
+          <ion-col col-8 class="deals-text-elements">
+            <span class="deals-each-text-elements">
+              <span class="deals-inner-sec">
+                PUPPY POSE
+              </span>
+              <span class="get-now">
+                <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
+              </span>
+              <span class="forward-now">
+                <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
+              </span>
+
+            </span>
+          </ion-col>
+        </ion-row>
+
+
+
+
+      </ion-grid>
     </div>
   </div>
 
