@@ -1,3 +1,70 @@
-page-list {
-
+page-list 
+{
+    .scroll-content
+    {
+        overflow-y: hidden!important
+    }
+    .y-home-header .toolbar-background-md,
+    .y-home-header .toolbar-background-wp,
+    .y-home-header .toolbar-background-ios
+    {
+        background-color:#e4198c!important;
+    }
+    .y-home-header .bar-button-default-md,
+    .y-home-header .bar-button-default-ios,
+    .y-home-header .bar-button-default-wp
+    
+    {
+        color:#fff!important;
+    }
+    .y-home-header .toolbar-title-md,
+    .y-home-header .toolbar-title-wp,
+    .y-home-header .toolbar-title-ios
+    {
+        height: 60px;
+        width: 100px;
+        padding-top: 10px;
+        float: left;
+    }
+    
+    .y-home-header .toolbar-title-ios
+    {
+        text-align:left!important;
+    }
+    .y-home-header .toolbar-ios ion-title
+    {
+        padding:0 0 0 60px;
+    }
+    .y1-home-sub-inner-sec.grid 
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding:8px!important;
+        background-color:#e6dbec;
+        height:100%;
+    }
+    .y2-home-sub-inner-sec.row 
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0!important;
+    }
+    .y3-home-sub-inner-se.col
+     {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+    .y2-footer-sub-inner-sec
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        cursor: pointer; 
+    }
 }

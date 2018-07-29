@@ -1,1 +1,129 @@
 *{font-family: 'Lato', sans-serif;}
+.header-md::after,.header-wp::after,.header-ios::after
+{
+    background-image:none!important;
+}
+.menu-inner-sec-y
+{
+
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image:url("./../assets/imgs/1.png");    
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.menu-usrer-profile-sec
+{
+    width: 100%;
+    float: left;
+}
+.menu-inner-profiles
+{
+    width: 100%;
+    float: left;
+    margin-top:20px;
+}
+.user-profiles 
+{
+    width: 100%;
+    float: left;
+}
+.user-pf1 
+{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-pf
+{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e5198c;
+}
+.user-profiles
+{
+   max-width:100%;
+   float: left;
+   width:100%;
+}
+span.user-names 
+{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size:13px;
+    color:#e5198c;
+    line-height:18px;
+}
+.menu-each-list
+{
+    width:100%;
+    float: left;
+}
+.menu-each-list ul
+{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding-left:40px;
+}
+.menu-each-list ul li
+{
+    width: 100%;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    margin: 2px 0;
+    text-transform: uppercase;
+    color:#287fcc;
+    font-size:13px;
+    font-weight:100;
+    position: relative;
+    cursor: pointer;
+    
+}
+.menu-each-list ul li.y1::before
+{
+    position: absolute;;
+    content: '';
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    float: left;
+    background-color: #2281d1;
+    left:-21px;
+}
+.menu-each-list ul li.y2::before
+{
+    position: absolute;;
+    content: '';
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    float: left;
+    background-color: #e01b8e;
+    left:-21px;
+}
+span.y3 {
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    padding: 5px 0;
+    margin-left: -18px;
+    line-height: 20px;
+    box-sizing: border-box;
+    color:#e5198c;
+}

@@ -1,23 +1,31 @@
-<ion-header>
+<ion-header class="y-home-header">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title class="items-list">
+      <img src="./../../assets/imgs/logos.png" class="logo-images">
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+<ion-content class="y-home-inner-content">
+  <ion-grid class="y1-home-sub-inner-sec">
+    <ion-row class="y2-home-sub-inner-sec">
+      <ion-col col-12 class="y3-home-sub-inner-se">
+        <img src="./../../assets/imgs/yg.png" />
+      </ion-col>
+    </ion-row>
+    <ion-row class="y2-home-sub-inner-sec">
+      <ion-col col-12 class="y3-home-sub-inner-se">
+        
+        
+      </ion-col>
+    </ion-row>
+    <ion-row class="y2-footer-sub-inner-sec">
+      <ion-col col-12 class="y3-home-sub-inner-se">
+        <img src="./../../assets/imgs/WhatsApp-Image-2018-06-26-at-12.34.png" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

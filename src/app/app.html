@@ -1,16 +1,68 @@
-<ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-menu [content]="content" class="menu-header-out-y">
 
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
+  <ion-content class="menu-inner-sec-y">
+    <ion-row class="menu-usrer-profile-sec">
+      <ion-col class="menu-inner-profiles">
+        <div class="user-pf1">
+          <span class="user-pf">
+            <img src="./../assets/imgs/drawer_profile_pic.png" class="user-profiles" />
+          </span>
+        </div>
+        <span class="user-names">
+          Ashish Kumar Singh
+        </span>
+      </ion-col>
+    </ion-row>
+
+    <div class="menu-each-list">
+      <ul>
+        <li menuClose *ngFor="let p of pages" (click)="openPage(p)" class="y1">
+          {{p.title}}
+        </li>
+        <li class="y2">
+          Offers
+        </li>
+        <span class="y3">
+          ACCOUNT
+        </span>
+        <li class="y1">
+          LOGOUT
+        </li>
+        <li class="y1">
+          RESTORE PURCHASES
+        </li>
+        <li class="y1">
+          SUBSCRIPTIONS
+        </li>
+        <li class="y1">
+          VOCHERS
+        </li>
+        <span class="y3">
+          SETTINGS
+        </span>
+        <li class="y1">
+          SETTINGS AND NOTIFICATIONS
+        </li>
+        <span class="y3">
+          ABOUT
+        </span>
+        <li class="y1">
+          MORE FORM THIS PUBLIHER
+        </li>
+        <li class="y1">
+         TELL A FRIEND
+        </li>
+        <li class="y1">
+          TERMS AND CONDITIONS
+        </li>
+        <li class="y1">
+          PRIVACY POLICY
+        </li>
+
+
+      </ul>
+
+    </div>
   </ion-content>
 
 </ion-menu>

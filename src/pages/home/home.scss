@@ -1,3 +1,158 @@
-page-home {
-
+page-home 
+{
+    .scroll-content
+    {
+        overflow-y: hidden!important
+    }
+    .y-home-header .toolbar-background-md,
+    .y-home-header .toolbar-background-wp,
+    .y-home-header .toolbar-background-ios
+    {
+        background-color:#e4198c!important;
+    }
+     .header-md::after,
+     .header-wp::after,
+     .header-ios::after
+    {
+        background-image:none!important;
+    }
+    .y-home-header .toolbar-title-md,
+    .y-home-header .toolbar-title-wp,
+    .y-home-header .toolbar-title-ios
+    {
+        height: 60px;
+        width: 100px;
+        padding-top: 10px;
+        float: left;
+    }
+    .y-home-header .bar-button-default-md,
+    .y-home-header .bar-button-default-ios,
+    .y-home-header .bar-button-default-wp
+    
+    {
+        color:#fff!important;
+    }
+    .y-home-header .toolbar-title-md,
+    .y-home-header .toolbar-title-wp,
+    .y-home-header .toolbar-title-ios
+    {
+        font-size:13px!important;
+        color:#fff!important;
+        font-weight:100!important;
+    }
+    .y-home-header .toolbar-title-ios
+    {
+        text-align:left!important;
+    }
+    .y-home-header .toolbar-ios ion-title
+    {
+        padding:0 0 0 60px;
+    }
+    .y1-home-sub-inner-sec.grid 
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding:8px!important;
+        background-color:#e6dbec;
+        height:100%;
+    }
+    .y22-outer 
+    {
+        width: 100%;
+        float: left;
+        height: calc(100vh - 160px);
+        box-sizing:border-box;
+    }
+    .y2-home-sub-inner-sec.row 
+    {
+        width: 100%;
+        float: left;
+        padding: 0!important;
+    }
+    .y3-home-sub-inner-se
+     {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        height:50%;
+       
+    }
+    .y3-home-sub-inner-se1
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0!important;
+    }
+    
+    .main-images
+    {
+        position: relative;
+        width:100%;
+        max-width:100%;
+        float: left;
+        margin-bottom:6px;
+    }
+    span.deals-images 
+    {
+        position: absolute;
+        top: 0;
+        left:0;
+        height: 100px;
+        width: 100px;
+        float: left;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
+    span.deals-images img
+    {
+        max-width:100%;
+        width:100%;
+        float: left;
+    }
+    span.view-now-button 
+    {
+        right: 0;
+        position: absolute;
+        bottom: -66px;
+        height: 120px;
+        width: 120px;
+        float: left;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    span.view-now-text 
+    {
+        position: absolute;
+        z-index: 9999999;
+        left:36px;
+        height: 150px;
+        width: 150px;
+        float: left;
+        bottom: -106px;
+        cursor: pointer;
+    }
+    .y3-home-sub-inner-se1 img
+    {
+        max-width:100%;
+        width:100%;
+        float: left;
+    }
+    span.y3-text {
+        position: absolute;
+        right: 18px;
+        height: 90px;
+        width: 90px;
+        float: left;
+        top: 47px;
+    }
+    span.y3-text img
+    {
+        width:100%;
+        max-width:100%;
+        float: left;
+    }
 }

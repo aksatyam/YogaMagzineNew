@@ -24,11 +24,14 @@ page-login
     }
     .login-inner-sec
     {
-        width:100%;
+        width: 100%;
         float: left;
-        padding:0;
-        margin:0;
-        background:#e4198c;
+        padding: 0;
+        margin: 0;
+        background-image: url(./../../assets/imgs/login_signup_bg.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .login-up-outers
     {
@@ -36,7 +39,7 @@ page-login
         float: left;
         padding: 6px;
         position: absolute;
-        top: 30%;
+        top:25%;
         transform: translateY(-15%);
     }
     .login-sub-inner-sec.grid 
@@ -45,13 +48,11 @@ page-login
         float: left;
         margin: 0;
         box-sizing: border-box;
-        background:#fff;
-        border-radius:2px;
     }
     .login-each-field.row 
     {
         float: left;
-        margin:5px 0;
+        margin:2px 0;
         padding: 0;
         width: 100%;
     }
@@ -71,7 +72,7 @@ page-login
     .input-field-y input.text-input.text-input-wp
     {
         height: 35px;
-        border: 1px solid #ddd;
+        border: 1px solid #e4198c;
         border-radius: 2px;
         float: left;
         margin: 0;
@@ -96,6 +97,14 @@ page-login
         margin: 0;
         padding: 0;
     }
+    .login-register-here-outer
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding:15px;
+        cursor: pointer;
+    }
     .login-up-header
     {
         font-size:15px;
@@ -110,17 +119,18 @@ page-login
         width: 100%;
         float: left;
         box-shadow: none;
-        font-size: 12px;
+        font-size: 11px;
         margin: 0;
         box-sizing: border-box;
         cursor: pointer;
         height: inherit;
-        padding:6px;
+        padding:10px 20px;
         line-height: 16px;
-        text-transform: capitalize;
+        text-transform:uppercase;
         background-color:#e4198c;
         color:#fff;
         margin-top:20px;
+        border-radius:2px!important;
     }
     .fotter-sec.row 
     {
@@ -129,7 +139,6 @@ page-login
         position: absolute;
         bottom: 0;
         height: 30px;
-        background: #fff;
     }
     .login-fotter-sec.col 
     {
@@ -146,30 +155,58 @@ page-login
          margin: 0;
          padding: 0;
          line-height: 16px;
-         color:#e4198c;
+         color:black;
      }
      a.login-now 
      {
          cursor: pointer;
-         font-weight: 600;
+         font-weight:100;
          text-decoration: none;
          margin: 0;
          padding: 0;
          color:#e4198c!important;
+         text-decoration: underline;
      }
-     .forget-outer-sec.row 
-     {
+    .login-with.col
+    {
         width: 100%;
         float: left;
-     }
-     a.forget-password 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    span.login-with-fg
      {
-        position: absolute;
-        right: 11px;
-        font-size: 10px;
-        cursor: pointer;
-        margin-top: -2px;
-        text-decoration: none;
+        position: relative;
+        font-size:9px;
+        letter-spacing: 1.2px;
+        line-height: 10px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         color:#e4198c!important;
+        opacity:0.6;
+    }
+    span.login-with-fg:before 
+    {
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: #e4198c !important;
+        left: -96px;
+        bottom: 5px;
+    }
+    span.login-with-fg::after 
+    {
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: #e4198c !important;
+        border-bottom: 10px;
+        right: -98px;
+        bottom: 6px;
     }
 }
