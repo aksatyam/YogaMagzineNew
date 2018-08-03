@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="y-latest-header">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -9,24 +9,24 @@
 
 
 <ion-content>
-    <div [ngSwitch]="selectedTab">
+    <div [ngSwitch]="selectedTab"  class="views-tabs-sec">
 
-      <div *ngSwitchCase="'Latest Issue'">
+      <div *ngSwitchCase="'Latest Issue'" class="views-tabs-seg">
        Latest Issue
       </div>
     
-      <div *ngSwitchCase="'My Magzines'">
+      <div *ngSwitchCase="'My Magzines'" class="views-tabs-seg">
         My Magzines
       </div>
 
     </div>
 </ion-content>
-<ion-footer>
-  <ion-segment [(ngModel)]="selectedTab">
-    <ion-segment-button value="Latest Issue">
+<ion-footer class="latest-issues-footer">
+  <ion-segment [(ngModel)]="selectedTab"  class="tab-switch-outers">
+    <ion-segment-button value="Latest Issue" class="each-segment-tabs">
         Latest Issue
     </ion-segment-button>
-    <ion-segment-button value="My Magzines">
+    <ion-segment-button value="My Magzines" class="each-segment-tabs">
         My Magzines
     </ion-segment-button>
   </ion-segment>

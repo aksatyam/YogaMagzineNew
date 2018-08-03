@@ -1,3 +1,78 @@
-page-latest-issues {
-
+page-latest-issues 
+{
+    
+    .y-latest-header .toolbar-background-md,
+    .y-home-header .toolbar-background-wp,
+    .y-home-header .toolbar-background-ios
+    {
+        background-color:#e4198c!important;
+    }
+    .latest-issues-footer
+    {
+        background-color:#e4198c!important;
+        width:100%;
+        float: left;  
+    }
+    .y-latest-header .toolbar-title-md,
+    .y-latest-header .toolbar-title-wp,
+    .y-latest-header .toolbar-title-ios
+    {
+        
+      
+        float: left;
+    }
+    .y-latest-header .bar-button-default-md,
+    .y-latest-header .bar-button-default-ios,
+    .y-latest-header .bar-button-default-wp
+    
+    {
+        color:#fff!important;
+    }
+    .y-latest-header .toolbar-title-md,
+    .y-latest-header .toolbar-title-wp,
+    .y-latest-header .toolbar-title-ios
+    {
+        font-size:13px!important;
+        color:#fff!important;
+        font-weight:100!important;
+    }
+    .y-latest-header .toolbar-title-ios
+    {
+        text-align:left!important;
+    }
+    .y-latest-header .toolbar-ios ion-title
+    {
+        padding:0 0 0 60px!important;
+    }
+   .tab-switch-outers
+   {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    ion-segment-button.each-segment-tabs.segment-button.segment-activated 
+    {
+        border-color: #fff!important;
+        color: #fff!important;
+        opacity:0.8;
+        
+    }
+    ion-segment-button.each-segment-tabs.segment-button
+     {
+        color: #fff!important;
+    }
+    .segment-ios .segment-button.segment-activated
+    {
+        background:transparent!important;
+      
+    }
+    .segment-ios .segment-button
+    {
+        border-color:#fff;
+    }
+    .segment-ios .segment-button:active:not(.segment-activated)
+    {
+        background:transparent!important;
+    }
 }

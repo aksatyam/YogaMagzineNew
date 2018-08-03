@@ -1,9 +1,6 @@
 page-signup 
 {
-    body
-    {
-        background-color:#e4198c;
-    }
+   
     .scroll-content
     {
         overflow-y:hidden!important;
@@ -28,11 +25,15 @@ page-signup
     }
     .signup-inner-sec
     {
-        width:100%;
+         
+        width: 100%;
         float: left;
-        padding:0;
-        margin:0;
-        background:#e4198c;
+        padding: 0;
+        margin: 0;
+        background-image: url(./../../assets/imgs/login_signup_bg.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .sign-up-outers
     {
@@ -46,8 +47,7 @@ page-signup
         float: left;
         margin: 0;
         box-sizing: border-box;
-        background:#fff;
-        border-radius:2px;
+       
     }
     .sign-each-field.row 
     {
@@ -107,7 +107,7 @@ page-signup
         box-sizing: border-box;
         line-height:20px;
         text-transform: capitalize;
-        color:black;
+        color:#666;
     }
     .sign-register-heres.col 
     {
