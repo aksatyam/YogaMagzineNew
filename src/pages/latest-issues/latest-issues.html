@@ -9,6 +9,7 @@
 
 
 <ion-content>
+<<<<<<< HEAD
   <div [ngSwitch]="selectedTab" class="views-tabs-sec">
 
     <div *ngSwitchCase="'Latest Issue'" class="views-tabs-seg">
@@ -23,6 +24,20 @@
               </ion-input>
          </div>
          
+=======
+    <ion-fab top right edge>
+        <button ion-fab mini (click)="getCurrentSlides()" color="danger"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+    <div [ngSwitch]="selectedTab">
+
+      <div *ngSwitchCase="'Latest Issue'">
+       Latest Issue
+       <carousel [slides]="slides" [autoloop]="true" (selectSlide)="selectItem($event);"></carousel>
+      </div>
+    
+      <div *ngSwitchCase="'My Magzines'">
+        My Magzines
+>>>>>>> 0b3dab3f395e656e1bacb7d5643f2ff807316d06
       </div>
       <div class="my-maz-ot">
         <div class="my-maz-each">
