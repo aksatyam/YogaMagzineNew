@@ -9,22 +9,6 @@
 
 
 <ion-content>
-<<<<<<< HEAD
-  <div [ngSwitch]="selectedTab" class="views-tabs-sec">
-
-    <div *ngSwitchCase="'Latest Issue'" class="views-tabs-seg">
-      Latest Issue
-    </div>
-
-    <div *ngSwitchCase="'My Magzines'" class="views-tabs-seg">
-      <div class="search-bar">
-         <div class="search-yg">
-            <ion-input type="text" placeholder="Search" class="yg-input">
-
-              </ion-input>
-         </div>
-         
-=======
     <ion-fab top right edge>
         <button ion-fab mini (click)="getCurrentSlides()" color="danger"><ion-icon name="add"></ion-icon></button>
     </ion-fab>
@@ -37,8 +21,7 @@
     
       <div *ngSwitchCase="'My Magzines'">
         My Magzines
->>>>>>> 0b3dab3f395e656e1bacb7d5643f2ff807316d06
-      </div>
+     
       <div class="my-maz-ot">
         <div class="my-maz-each">
           <div class="my-mz-imag">
@@ -117,8 +100,7 @@
 
       </div>
     </div>
-
-  </div>
+    </div>
 </ion-content>
 <ion-footer class="latest-issues-footer">
   <ion-segment [(ngModel)]="selectedTab" class="tab-switch-outers">
