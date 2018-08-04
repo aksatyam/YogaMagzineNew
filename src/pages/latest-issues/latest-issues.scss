@@ -13,6 +13,10 @@ page-latest-issues
         width:100%;
         float: left;  
     }
+    .y-latest-header .toolbar-ios ion-title, .y-latest-header .toolbar-background-wp
+    {
+        background-color:#e4198c!important;
+    }
     .y-latest-header .toolbar-title-md,
     .y-latest-header .toolbar-title-wp,
     .y-latest-header .toolbar-title-ios
@@ -42,7 +46,7 @@ page-latest-issues
     }
     .y-latest-header .toolbar-ios ion-title
     {
-        padding:0 0 0 60px!important;
+        padding:20px 0 0 50px!important;
     }
    .tab-switch-outers
    {
@@ -56,6 +60,7 @@ page-latest-issues
         border-color: #fff!important;
         color: #fff!important;
         opacity:0.8;
+        width:50%;
         
     }
     ion-segment-button.each-segment-tabs.segment-button
@@ -74,5 +79,103 @@ page-latest-issues
     .segment-ios .segment-button:active:not(.segment-activated)
     {
         background:transparent!important;
+    }
+    .views-tabs-seg 
+    {
+        width: 100%;
+        float: left;
+    }
+    .my-maz-ot
+    {
+        margin-top: 45px;
+        width: 100%;
+        float: left;
+        background: #f8f8f8;
+        border-bottom: 1px solid #e1e1e1;
+        padding: 5px;
+
+    }
+    .search-bar {
+        width: 100%;
+        float: left;
+        position: fixed;
+        z-index: 9999;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+      .yg-input.input.input-md,
+      .yg-input.input.input-wp,
+      .yg-input.input.input-ios 
+        {
+            color: #fff;
+            background: #fff;
+            float: left;
+            height: 35px;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            margin: 0!important;
+        }
+        .text-input-md,.text-input-wp,.text-input-ios
+        {
+            margin:8px 8px!important;
+        }
+    .search-yg 
+    {
+        height: 45px;
+        width:100%;
+        float: left;
+        background: #f8f8f8;
+        border-bottom: 1px solid #e1e1e1;
+        padding:5px 25px 5px 5px;
+    }
+    .my-maz-in
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .my-maz-each 
+    {
+        width: 50%;
+        float: left;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding:0px;
+        margin:0px 0 10px 0;
+    }
+    .my-mz-imag 
+    {
+        width: 100%;
+        float: left;
+        padding:10px;
+    }
+    .yg-img 
+    {
+        width:100%;
+        height:130px;
+        float: left;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    img.mz-mg {
+        width: 100%;
+        float: left;
+        height: 100%;
+    }
+    .y-article 
+    {
+        width: 100%;
+        float: left;
+        min-height: 30px;
+        background-color: #cf147f;
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+        line-height: 16px;
+        font-size: 13px;
     }
 }
