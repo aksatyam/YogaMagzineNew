@@ -1,3 +1,69 @@
-page-poses {
+page-poses 
+{ 
+    .scroll-content
+    {
+        overflow-y:hidden!important;
+    }
+    .latest-issues-changes
+    {
+        width:100%;
+        float: left;
+        height:100vh;
+        background:#e1e1e1;
+    }
+    .y-poses-headers .toolbar-background-md,
+    .y-home-header .toolbar-background-wp,
+    .y-home-header .toolbar-background-ios
+    {
+        background-color:#e4198c!important;
+    }
+    .latest-issues-footer
+    {
+        background-color:#e5198a!important;
+        width:100%;
+        float: left;  
+    }
+    .y-poses-headers .toolbar-ios ion-title, .y-poses-headers .toolbar-background-wp
+    {
+        background-color:#e4198c!important;
+    }
+    .y-poses-headers .toolbar-title-md,
+    .y-poses-headers .toolbar-title-wp,
+    .y-poses-headers .toolbar-title-ios
+    {
+        
+      
+        float: left;
+    }
+    .y-poses-headers .bar-button-default-md,
+    .y-poses-headers .bar-button-default-ios,
+    .y-poses-headers .bar-button-default-wp
+    
+    {
+        color:#fff!important;
+    }
+    .y-poses-headers .toolbar-title-md,
+    .y-poses-headers .toolbar-title-wp,
+    .y-poses-headers .toolbar-title-ios
+    {
+        font-size:15px!important;
+        color:#fff!important;
+        font-weight:100!important;
+    }
+    .y-poses-headers .toolbar-title-ios
+    {
+        text-align:left!important;
+    }
+    .y-poses-headers .toolbar-ios ion-title
+    {
+        padding:20px 0 0 70px!important;
+    }
+   .tab-switch-outers
+   {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
 
 }

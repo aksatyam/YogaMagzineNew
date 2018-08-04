@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { PosesPage } from '../poses/poses';
 
 @Component({
   selector: 'page-view-offers',
@@ -12,6 +13,10 @@ export class ViewOffersPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ViewOffersPage');
+  }
+
+  openPosesPage(){
+    this.navCtrl.push(PosesPage);
   }
 
 }

@@ -26,7 +26,7 @@
   <div [ngSwitch]="offer" class="tab-switch-outers">
     <div *ngSwitchCase="'beginner'" class="each-segment-tabs">
       <ion-grid class="deals-sub-inner-sec">
-        <ion-row class="deals-each-row">
+        <ion-row class="deals-each-row" (click)="openPosesPage()">
           <ion-col col-4 class="deals-each-elements">
             <span class="deals-each-images">
               <img src="./../../assets/imgs/youga.jpg" />

@@ -9,98 +9,95 @@
 
 
 <ion-content>
-    <ion-fab top right edge>
-        <button ion-fab mini (click)="getCurrentSlides()" color="danger"><ion-icon name="add"></ion-icon></button>
-    </ion-fab>
-    <div [ngSwitch]="selectedTab">
+  <div [ngSwitch]="selectedTab">
 
-      <div *ngSwitchCase="'Latest Issue'">
-       Latest Issue
-       <carousel [slides]="slides" [autoloop]="true" (selectSlide)="selectItem($event);"></carousel>
+    <div *ngSwitchCase="'Latest Issue'" class="latest-issues-changes">
+      <carousel [slides]="slides" [autoloop]="true" (selectSlide)="selectItem($event);"></carousel>
+      <div class="sliders-bottm-sec">
+        <img src="./../../assets/imgs/WhatsApp-Image-2018-06-26-at-12.34.png" />
       </div>
-    
-      <div *ngSwitchCase="'My Magzines'">
-        My Magzines
-     
+
+    </div>
+
+    <div *ngSwitchCase="'My Magzines'">
+      <ion-row class="search-items-list">
+        <ion-col col-12 class="search-items">
+          <ion-input type="text" placeholder="Search" class="input-items">
+
+          </ion-input>
+        </ion-col>
+      </ion-row>
       <div class="my-maz-ot">
-        <div class="my-maz-each">
-          <div class="my-mz-imag">
-            <div class="yg-img">
-              <img src="./../../assets/imgs/img-12.jpg" class="mz-mg">
-            </div>
-            <div class="y-article">
-              <span class="article">
-                June 2018
-              </span>
-            </div>
+        <div class="mz-sub-inner-sec">
+          <div class="my-maz-each">
+            <div class="my-mz-imag">
+              <div class="yg-img">
+                <img src="./../../assets/imgs/img-12.jpg" class="mz-mg">
+              </div>
+              <div class="y-article">
+                <span class="article">
+                  June 2018
+                </span>
+              </div>
 
+            </div>
+          </div>
+          <div class="my-maz-each">
+            <div class="my-mz-imag">
+              <div class="yg-img">
+                <img src="./../../assets/imgs/bkg-img9.png" class="mz-mg">
+              </div>
+              <div class="y-article">
+                <span class="article">
+                  June 2018
+                </span>
+              </div>
+
+            </div>
+          </div>
+          <div class="my-maz-each">
+            <div class="my-mz-imag">
+              <div class="yg-img">
+                <img src="./../../assets/imgs/img-12.jpg" class="mz-mg">
+              </div>
+              <div class="y-article">
+                <span class="article">
+                  June 2018
+                </span>
+              </div>
+
+            </div>
+          </div>
+          <div class="my-maz-each">
+            <div class="my-mz-imag">
+              <div class="yg-img">
+                <img src="./../../assets/imgs/img-12.jpg" class="mz-mg">
+              </div>
+              <div class="y-article">
+                <span class="article">
+                  June 2018
+                </span>
+              </div>
+
+            </div>
+          </div>
+          <div class="my-maz-each">
+            <div class="my-mz-imag">
+              <div class="yg-img">
+                <img src="./../../assets/imgs/img-12.jpg" class="mz-mg">
+              </div>
+              <div class="y-article">
+                <span class="article">
+                  June 2018
+                </span>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="my-maz-each">
-          <div class="my-mz-imag">
-            <div class="yg-img">
-              <img src="./../../assets/imgs/bkg-img9.png" class="mz-mg">
-            </div>
-            <div class="y-article">
-              <span class="article">
-                June 2018
-              </span>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="my-maz-each">
-          <div class="my-mz-imag">
-            <div class="yg-img">
-              <img src="./../../assets/imgs/img-12.jpg" class="mz-mg">
-            </div>
-            <div class="y-article">
-              <span class="article">
-                June 2018
-              </span>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="my-maz-each">
-          <div class="my-mz-imag">
-            <div class="yg-img">
-              <img src="./../../assets/imgs/img-12.jpg" class="mz-mg">
-            </div>
-            <div class="y-article">
-              <span class="article">
-                June 2018
-              </span>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="my-maz-each">
-          <div class="my-mz-imag">
-            <div class="yg-img">
-              <img src="./../../assets/imgs/img-12.jpg" class="mz-mg">
-            </div>
-            <div class="y-article">
-              <span class="article">
-                June 2018
-              </span>
-            </div>
-
-          </div>
-        </div>
-
-
-
-
       </div>
     </div>
-    </div>
+  </div>
 </ion-content>
 <ion-footer class="latest-issues-footer">
   <ion-segment [(ngModel)]="selectedTab" class="tab-switch-outers">

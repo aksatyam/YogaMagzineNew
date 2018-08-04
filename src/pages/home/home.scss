@@ -17,12 +17,18 @@ page-home
         background-image:none!important;
     }
     .y-home-header .toolbar-title-md,
-    .y-home-header .toolbar-title-wp,
-    .y-home-header .toolbar-title-ios
+    .y-home-header .toolbar-title-wp
     {
         height: 60px;
         width: 100px;
         padding-top: 16px;
+        float: left;
+    }
+
+    .y-home-header .toolbar-title-ios
+    {
+        height: 60px;
+        width: 100px;
         float: left;
     }
     .y-home-header .bar-button-default-md,

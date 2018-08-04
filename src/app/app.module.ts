@@ -16,6 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ViewOffersPage } from '../pages/view-offers/view-offers';
 import { DealsPage } from '../pages/deals/deals';
 import { PosesPage } from '../pages/poses/poses';
+import { SplashPage } from '../pages/splash/splash';
+import { PreviewPage } from '../pages/preview/preview';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { PosesPage } from '../pages/poses/poses';
     ViewOffersPage,
     DealsPage,
     PosesPage,
-    CarouselComponent
+    CarouselComponent,
+    SplashPage,
+    PreviewPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import { PosesPage } from '../pages/poses/poses';
     LatestIssuesPage,
     ViewOffersPage,
     DealsPage,
-    PosesPage
+    PosesPage,
+    SplashPage,
+    PreviewPage
   ],
   providers: [
     StatusBar,

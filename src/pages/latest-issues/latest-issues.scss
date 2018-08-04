@@ -1,6 +1,17 @@
 page-latest-issues 
 {
-    
+
+    .scroll-content
+    {
+        overflow-y:hidden!important;
+    }
+    .latest-issues-changes
+    {
+        width:100%;
+        float: left;
+        height:100vh;
+        background:#e1e1e1;
+    }
     .y-latest-header .toolbar-background-md,
     .y-home-header .toolbar-background-wp,
     .y-home-header .toolbar-background-ios
@@ -9,7 +20,7 @@ page-latest-issues
     }
     .latest-issues-footer
     {
-        background-color:#e4198c!important;
+        background-color:#e5198a!important;
         width:100%;
         float: left;  
     }
@@ -61,11 +72,14 @@ page-latest-issues
         color: #fff!important;
         opacity:0.8;
         width:50%;
+        background-color:#cf147f;
         
     }
     ion-segment-button.each-segment-tabs.segment-button
      {
-        color: #fff!important;
+       
+        color: #fff !important;
+        width: 50%;
     }
     .segment-ios .segment-button.segment-activated
     {
@@ -80,6 +94,7 @@ page-latest-issues
     {
         background:transparent!important;
     }
+    
     .views-tabs-seg 
     {
         width: 100%;
@@ -87,12 +102,11 @@ page-latest-issues
     }
     .my-maz-ot
     {
-        margin-top: 45px;
+        margin-top:10px;
         width: 100%;
         float: left;
-        background: #f8f8f8;
-        border-bottom: 1px solid #e1e1e1;
         padding: 5px;
+        background:#fff;
 
     }
     .search-bar {
@@ -177,5 +191,65 @@ page-latest-issues
         padding: 10px;
         line-height: 16px;
         font-size: 13px;
+    }  
+    .sliders-bottm-sec
+    {
+        width:100%;
+        float: left;
+        position: fixed;
+        bottom:45px;
+        left:0px;
+        right:0px;
+        box-sizing: border-box;
+        max-width:100%;
+        overflow: hidden;
+      
+    }
+    .sliders-outers img
+    {
+        width:100%;
+        max-width:100%;
+        float: left;
+    }  
+    .search-items-list
+    {
+        width: 100%;
+        float: left;
+        height: 50px;
+        background: #ddd;
+        border-bottom: 1px solid #e1e1e1;
+    }
+   .search-items
+   {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    .search-items 
+    {
+        width: 100%;
+        float: left;
+        padding: 8px;
+    }
+    .input.input-md,.input.input-wp,.input.input-ios
+    {
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        background: #fff;
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 13px;
+        cursor: pointer;
+        padding: 0 10px 0 0px;
+        color: #666;
+    }
+    .mz-sub-inner-sec
+    {
+        width:100%;
+        float: left;
+        margin:0;
+        overflow-y:auto;
+        overflow-x: hidden;
+        height:calc(100vh - 148px);
     }
 }
