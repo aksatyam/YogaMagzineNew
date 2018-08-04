@@ -9,10 +9,14 @@
 
 
 <ion-content>
+    <ion-fab top right edge>
+        <button ion-fab mini (click)="getCurrentSlides()" color="danger"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
     <div [ngSwitch]="selectedTab">
 
       <div *ngSwitchCase="'Latest Issue'">
        Latest Issue
+       <carousel [slides]="slides" [autoloop]="true" (selectSlide)="selectItem($event);"></carousel>
       </div>
     
       <div *ngSwitchCase="'My Magzines'">
