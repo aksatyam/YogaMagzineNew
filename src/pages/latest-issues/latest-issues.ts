@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController } from 'ionic-angular';
+import { SubscribePage } from '../subscribe/subscribe';
 
 @Component({
   selector: 'page-latest-issues',
@@ -200,6 +201,6 @@ export class LatestIssuesPage {
 }
 
   selectItem(item: any) {
-    
+    this.navCtrl.push(SubscribePage);
   }
 }

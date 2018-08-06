@@ -18,6 +18,7 @@ import { DealsPage } from '../pages/deals/deals';
 import { PosesPage } from '../pages/poses/poses';
 import { SplashPage } from '../pages/splash/splash';
 import { PreviewPage } from '../pages/preview/preview';
+import { SubscribePage } from '../pages/subscribe/subscribe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PreviewPage } from '../pages/preview/preview';
     PosesPage,
     CarouselComponent,
     SplashPage,
-    PreviewPage
+    PreviewPage,
+    SubscribePage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { PreviewPage } from '../pages/preview/preview';
     DealsPage,
     PosesPage,
     SplashPage,
-    PreviewPage
+    PreviewPage,
+    SubscribePage
   ],
   providers: [
     StatusBar,

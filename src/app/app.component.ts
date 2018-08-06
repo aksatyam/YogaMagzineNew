@@ -16,7 +16,7 @@ import { LatestIssuesPage } from '../pages/latest-issues/latest-issues';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LatestIssuesPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -29,8 +29,8 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'Login', component: LoginPage },
       { title: 'SignUp', component: SignupPage },
-      { title: 'LatestIssues', component: LatestIssuesPage},
-      { title: ' SplashPage', component:SplashPage}
+      { title: 'Latest Issues', component: LatestIssuesPage},
+      { title: 'Splash Screen', component:SplashPage}
           
     ];
 
