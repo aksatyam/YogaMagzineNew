@@ -1,3 +1,84 @@
-page-splash {
+page-splash 
+{
+    .scroll-content
+    {
+        overflow-y: hidden!important;
+    }
+   .splash-screen
+   {
+       width:100%;
+       float: left;
+       height:100vh;
+       background-image: url("./../../assets/imgs/SplashScreen_bg.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   .splash-inner-screen 
+   {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .splash-sb-inner-screen
+    {
+        text-align: center;
+        position: absolute;
+        top:20vh;
+        width: 100%;
+        margin: 0;
+        float: left;
+    }
+    .splash-sbb-inner.col 
+    {
+        width: 100%;
+        float: left;
+        margin: 0p;
+        margin: 0;
+        padding: 0;
+    }
+    span.yg-inner-imgs 
+    {
 
+        float: left;
+        display: flex;
+        text-align: center;
+    }
+    span.yg-images-outers 
+    {
+        width: 100%;
+        float: left;
+        height: 15vh;
+    } 
+    span.yg-inner-imgs  img
+    {
+        height:100px;
+        width:100px;
+        float: left;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+    }
+    span.yg-inner-imgs
+    {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+
+    }
+    span.yg-link-outers 
+    {
+        width: 100%;
+        float: left;
+        padding-top: 28px;
+        font-size: 13px;
+        font-weight:500;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        margin: 0;
+        color:#cf0074;
+        text-transform:uppercase;
+    }
 }

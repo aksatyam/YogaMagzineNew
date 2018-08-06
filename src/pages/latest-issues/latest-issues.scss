@@ -252,4 +252,24 @@ page-latest-issues
         overflow-x: hidden;
         height:calc(100vh - 148px);
     }
+    #style-2::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius:20px;
+        background-color: #ddd;
+    }
+
+    #style-2::-webkit-scrollbar
+    {
+        width:8px;
+        background-color: #ddd;
+    }
+
+    #style-2::-webkit-scrollbar-thumb
+    {
+        border-radius:20px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #d0037c;
+    }
 }
+
