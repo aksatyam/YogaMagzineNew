@@ -1,3 +1,290 @@
-page-subscribe {
+page-subscribe 
+{
+    .scroll-content
+    {
+        overflow-y:hidden!important;
+    }
+    .y-home-header .toolbar-background-md,
+    .y-home-header .toolbar-background-wp,
+    .y-home-header .toolbar-background-ios
+    {
+        background-color:#e4198c!important;
+    }
+     .header-md::after,
+     .header-wp::after,
+     .header-ios::after
+    {
+        background-image:none!important;
+    }
+    .y-home-header .toolbar-title-md,
+    .y-home-header .toolbar-title-wp
+    {
+        height: 60px;
+        width: 100px;
+        padding-top: 16px;
+        float: left;
+    }
 
+    .y-home-header .toolbar-title-ios
+    {
+        height: 60px;
+        width: 100px;
+        float: left;
+    }
+    .y-home-header .bar-button-default-md,
+    .y-home-header .bar-button-default-ios,
+    .y-home-header .bar-button-default-wp
+    
+    {
+        color:#fff!important;
+    }
+    .y-home-header .toolbar-title-md,
+    .y-home-header .toolbar-title-wp,
+    .y-home-header .toolbar-title-ios
+    {
+        font-size:13px!important;
+        color:#fff!important;
+        font-weight:100!important;
+    }
+    .y-home-header .toolbar-title-ios
+    {
+        text-align:left!important;
+    }
+    .y-home-header .toolbar-ios ion-title
+    {
+        padding:0 0 0 60px;
+    }
+   .tab-switch-outers
+   {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .poses-sub-inner-sec 
+    {
+        width: 100%;
+        float: left;
+        height: calc(100vh - 56px);
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0!important;
+    }
+    .poses-top-element
+    {
+        width: 100%;
+        float: left;
+        height: 50vh;
+        margin:0!important;
+        padding:0!important;
+        border-bottom:1px solid #666;
+        background-color:#e1e1e1;
+    }
+    .poses-bottom-sec
+    {
+        width: 100%;
+        float: left;
+        height: 50vh;
+    }
+    .poses-inner-images 
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        height: calc(50vh - 80px);
+        overflow: hidden;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .poses-inner-images  img
+    {
+        width:100%;
+        max-width:100%;
+        height:100%;
+        float: left;
+    }
+    .poses-inner-poses 
+    {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    span.poses-text 
+    {
+        width: 100%;
+        float: left;
+        padding: 15px 0;
+        line-height: 18px;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color:#d0037c;
+    }
+    span.poses-bottom-banners 
+    {
+        width: 100%;
+        float: left;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+    span.poses-bottom-banners img
+    {
+          height:100%;
+          width:100%;
+          max-width:100%;
+          float: left;
+    }
+    span.poses-top-sec-scroll 
+    {
+        width: 100%;
+        float: k;
+        float: left;
+        margin: 0;
+        height: calc(50vh - 125px);
+        margin: 0;
+        padding: 5px 0px 5px 0px;
+        overflow-y: scroll;
+    }
+    span.poses-header
+     {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #d0037c;
+        margin: 0;
+        padding-bottom: 10px;
+        line-height: 15px;
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+    .poses-botom-sec
+    {
+        font-size: 11px;
+        color: #666;
+        margin: 0;
+        padding: 0;
+        line-height: 15px;
+        float: left;
+        width: 100%;
+        line-height:16px;
+        word-break: break-word;
+    }
+    #style-2::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius:20px;
+        background-color: #ddd;
+    }
+
+    #style-2::-webkit-scrollbar
+    {
+        width:8px;
+        background-color: #ddd;
+    }
+
+    #style-2::-webkit-scrollbar-thumb
+    {
+        border-radius:20px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #d0037c;
+    }
+    .poses-left-top-element.col 
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+    span.posses-inner-images 
+    {
+        width: 100%;
+        height: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    span.posses-inner-images img
+    {
+        height:100%;
+        width:100%;
+        float: left;
+        max-width:100%;
+    }
+    .poses-right-top-element.col 
+    {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    .poses-inner-btn-sec
+    {
+        width:100%;
+        float: left;
+        height:100%;
+        position: relative;
+    }
+    .poses-top-sec-elm
+    {
+        width: 100%;
+        float: left;
+        height: 50%;
+        padding: 20px 10px;
+
+    }
+    .poses-bottom-sec-elm
+    {
+        width:100%;
+        float: left;
+        height:50%;
+        padding: 20px 5px; 
+    }
+    span.poses-top-text 
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        line-height: 24px;
+        font-size: 18px;
+        color:#cf147f;
+    }
+    span.poses-bottom-text-text 
+    {
+        width: 100%;
+        float: left;
+        padding-top: 5px;
+        font-size: 13px;
+        margin: 0;
+        box-sizing: border-box;
+        color:#cf147f;
+    }
+    span.poses-buttom-sec 
+    {
+        width: 100%;
+        float: left;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .poses-button
+    {
+        height: inherit;
+        padding: 10px 20px;
+        border-radius:5px;
+        margin: 0;
+        box-sizing: border-box;
+        float:left;
+        display: inline-block;
+        line-height: 18px;
+        font-size:11px;
+        color: #fff;
+        position: absolute;
+        text-transform:uppercase!important;
+        font-weight: 100!important;
+        cursor: pointer;
+        background-color:#cf147f!important;
+        min-width:110px;
+    }
 }
