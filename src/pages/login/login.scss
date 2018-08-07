@@ -210,4 +210,10 @@ page-login
         right: -98px;
         bottom: 6px;
     }
+    
+    input::placeholder 
+    {
+        color:#e4198c!important;
+        opacity:0.5;
+    }
 }
