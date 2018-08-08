@@ -7,13 +7,20 @@ page-view-offers
         background-color:#e4198c!important;
     }
     .y-home-header .toolbar-title-md,
-    .y-home-header .toolbar-title-wp,
-    .y-home-header .toolbar-title-ios
+    .y-home-header .toolbar-title-wp
     {
-        height: 60px;
-        width: 100px;
+        height:60px;
+        width:100px;
         padding-top: 16px;
         float: left;
+    }
+    .y-home-header .toolbar-title-ios
+    {
+        height: 50px;
+        width:80px;
+        margin:10px;
+        float: left;
+        padding-top: 15px;
     }
     .y-home-header .bar-button-default-md,
     .y-home-header .bar-button-default-ios,
@@ -143,6 +150,14 @@ page-view-offers
         padding: 0;
         background: #cf147f;
         color: #fff;
+        height:42px;
+        font-size:13px!important;
+    }
+    .segment-ios .segment-button
+    {
+        height:100%!important;
+        padding:5px!important;
+        font-size:11px!important;
     }
     ion-segment-button.views-tabs-seg.segment-button.segment-activated
     {

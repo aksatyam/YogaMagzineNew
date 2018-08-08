@@ -17,7 +17,7 @@ page-home
         background-image:none!important;
     }
     .y-home-header .toolbar-title-md,
-    .y-home-header .toolbar-title-wp
+    .y-home-header .toolbar-title-wp,
     {
         height: 60px;
         width: 100px;
@@ -27,9 +27,10 @@ page-home
 
     .y-home-header .toolbar-title-ios
     {
-        height: 60px;
-        width: 100px;
+        height:50px;
+        width:80px;
         float: left;
+        padding:10px;
     }
     .y-home-header .bar-button-default-md,
     .y-home-header .bar-button-default-ios,
