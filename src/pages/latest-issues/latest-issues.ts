@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, LoadingController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, MenuController } from 'ionic-angular';
 import { SubscribePage } from '../subscribe/subscribe';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-latest-issues',
@@ -13,7 +14,8 @@ export class LatestIssuesPage {
     private end: number = 5;
     public selectedTab:any='Latest Issue';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public menuCtrl: MenuController) {
+    this.menuCtrl.enable(true);
     this.data = [
       {
           id: 1,
@@ -202,5 +204,9 @@ export class LatestIssuesPage {
 
   selectItem(item: any) {
     this.navCtrl.push(SubscribePage);
+  }
+
+  openPage(){
+      this.navCtrl.push(HomePage);
   }
 }

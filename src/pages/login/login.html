@@ -24,7 +24,7 @@
       </ion-row>
       <ion-row class="login-each-field">
         <ion-col col-12 class="login-register-here">
-          <button ion-button class="register-button">
+          <button ion-button class="register-button" (click)="openDashboard()">
             Login
           </button>
         </ion-col>
@@ -50,8 +50,8 @@
   <ion-row class="fotter-sec">
     <ion-col col-12 class="login-fotter-sec">
       <span class="already-reg">
-        Forget Password?
-        <a href="javascript:void(0);" class="login-now">Sign Up</a>
+        Don't have Account?
+        <a href="javascript:void(0);" class="login-now" (click)="openPage()">Sign Up</a>
       </span>
     </ion-col>
   </ion-row>
