@@ -216,4 +216,12 @@ page-login
         color:#e4198c!important;
         opacity:0.5;
     }
+    i.user-icons 
+    {
+        position: absolute;
+        left: 9px;
+        z-index: 999999;
+        color:#e4198c!important;
+        top: 11px;
+    }
 }
