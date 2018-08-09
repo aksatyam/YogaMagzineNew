@@ -11,44 +11,7 @@ carousel {
         }
       }
     
-      /*
-      .carousel-container {
-        padding: 70px 0;
-        margin: 0 auto;
-        width: 250px;
-        height: 200px;
-        position: relative;
-        perspective: 1000px;
-      }
-      .carousel {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        transform-style: preserve-3d;
-        transition: transform 1s;
-      }
     
-      .carousel img {
-        width:200px;
-        height:200px;
-        margin-top: 10px;
-      }
-    
-      .carousel-slide-item {
-        display: block;
-        position: absolute;
-        background:#000;
-        width: 250px;
-        height: 300px;
-        font-size: large;
-        text-align: center;
-        color: #FFF;
-        opacity: 0.95;
-        border-radius: 10px;
-      }
-      */
-    
-      // Version ion card
     
       .carousel-container {
         padding: 30px 0;
@@ -95,46 +58,9 @@ carousel {
         border-radius: 10px;
       }
     
-      @media screen and (max-width: 25em) {
-    
-        /*
-        .carousel-container {
-          padding: 70px 0;
-          margin: 0 auto;
-          width: 250px;
-          height: 200px;
-          position: relative;
-          perspective: 1000px;
-        }
-        .carousel {
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          transform-style: preserve-3d;
-          transition: transform 1s;
-        }
-    
-        .carousel img {
-          width:150px;
-          height:150px;
-          margin-top: 10px;
-        }
-    
-        .carousel-slide-item {
-          display: block;
-          position: absolute;
-          background:#000;
-          width: 200px;
-          height: 250px;
-          font-size: large;
-          text-align: center;
-          color: #FFF;
-          opacity: 0.95;
-          border-radius: 10px;
-        }
-        */
-    
-        // Version ion card
+      @media screen and (max-width: 25em) 
+      {
+ 
     
        .carousel-container {
          padding: 30px 0;
@@ -187,7 +113,6 @@ carousel {
          margin:0 20px 20px 20px!important;
          background-color:#fff!important;
          cursor: pointer;
-         border:1px solid #e4198c!important;
                  
        }
        .carousel-slide-item img
