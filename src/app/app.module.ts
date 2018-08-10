@@ -19,6 +19,8 @@ import { PosesPage } from '../pages/poses/poses';
 import { SplashPage } from '../pages/splash/splash';
 import { PreviewPage } from '../pages/preview/preview';
 import { SubscribePage } from '../pages/subscribe/subscribe';
+import { WebServicesProvider } from '../providers/web-services/web-services';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { SubscribePage } from '../pages/subscribe/subscribe';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -58,7 +61,8 @@ import { SubscribePage } from '../pages/subscribe/subscribe';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    WebServicesProvider
   ]
 })
 export class AppModule {}
