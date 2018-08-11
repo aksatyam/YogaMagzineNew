@@ -1,18 +1,55 @@
-<!--
-  Generated template for the PaymentPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+<ion-header class="y-header-payment">
 
   <ion-navbar>
-    <ion-title>payment</ion-title>
+    <ion-title>Payment</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="y-inner-payment-sec">
+  <ion-grid class="y-payment-sub-upper-inners">
+    <ion-row class="y-payment-upper-sec">
+      <ion-col col-12 class="ya-payment-each-sec">
+        <div class="banner-sec">
+          $1200
+        </div>
+        <img src="assets/imgs/August-2018.jpg" />
+      </ion-col>
+    </ion-row>
+    <ion-row class="y-payment-inner-sec">
+      <div class="y-payment-inners-sec">
+        <ion-col col-12 class="y-payment-header-sec">
+          <span class="payment-text-left-description">
+            March 2018
+          </span>
+          <span class="payment-text-right-description">
+            Yoga Group
+          </span>
 
+        </ion-col>
+        <div class="description-group">
+          How To PerformHow To PerformHow To PerformHow
+        </div>
+        <div class="subscription-sec">
+          <div class="subscription-inner-sec">
+            <ion-select [(ngModel)]="gaming" placeholder="Subscription">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+
+            </ion-select>
+          </div>
+        </div>
+        <div class="payment-button">
+
+          <button ion-button class="payment-btn">
+            Payment Proceed
+          </button>
+
+        </div>
+      </div>
+
+    </ion-row>
+
+  </ion-grid>
 </ion-content>

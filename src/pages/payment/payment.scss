@@ -1,3 +1,235 @@
-page-payment {
+page-payment 
+{
+    .scroll-content
+    {
+        overflow-y: hidden!important
+    }
+    .y-header-payment .toolbar-background-md,
+    .y-header-payment .toolbar-background-wp,
+    .y-header-payment .toolbar-background-ios
+    {
+        background-color:#e4198c!important;
+    }
+     .header-md::after,
+     .header-wp::after,
+     .header-ios::after
+    {
+        background-image:none!important;
+    }
+    .y-header-payment .toolbar-title-md,
+    .y-header-payment .toolbar-title-wp,
+    {
+        height: 60px;
+        width: 100px;
+        padding-top:22px;
+        float: left;
+    }
 
+    .y-header-payment .toolbar-title-ios
+    {
+        height:50px;
+        width:80px;
+        float: left;
+        padding:10px;
+    }
+    .y-header-payment .bar-button-default-md,
+    .y-header-payment .bar-button-default-ios,
+    .y-header-payment .bar-button-default-wp
+    
+    {
+        color:#fff!important;
+    }
+    .y-header-payment .toolbar-title-md,
+    .y-header-payment .toolbar-title-wp,
+    .y-header-payment .toolbar-title-ios
+    {
+        font-size:15px!important;
+        color:#fff!important;
+        font-weight:100!important;
+        text-transform: capitalize!important;
+    }
+    .y-header-payment .toolbar-title-ios
+    {
+        text-align:left!important;
+    }
+    .y-header-payment .toolbar-ios ion-title
+    {
+        padding:0 0 0 25px;
+    }
+    .y-payment-sub-inners
+    {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    .y-payment-sub-upper-inners
+    {
+        width: 100%;
+        float: left;
+        height: calc(100vh - 68px);
+        padding: 0;
+     
+    }
+    .y-payment-upper-sec
+    {
+        width: 100%;
+        float: left;
+        height:60%;
+        position: relative;
+    }
+    .ya-payment-each-sec
+    {
+        width:100%;
+        float: left;
+        margin:0;
+        padding:0;
+        position: relative;
+        padding:15px 15px 0 15px;
+       
+    } 
+    
+    .y-payment-upper-sec img
+    {
+        width:100%;
+        float: left;
+        height:100%;
+        max-width:100%;
+    }
+    .banner-sec
+    {
+        position: absolute;
+        min-width: 34%;
+        background-color: #e4198c !important;
+        float: left;
+        height: 30px;
+        left: 5px;
+        padding: 7px 10px;
+        line-height: 16px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 3px 0px 0px 0;
+        letter-spacing: 1px;
+    }
+    .banner-sec::before
+    {
+        position: absolute;
+        content: "";
+        border-right: 10px solid #e4198c;
+        border-left: 0px solid transparent;
+        border-top: 10px solid #e4198c;
+        top: 29px;
+        border-bottom: 10px solid transparent;
+        left: 0px;
+    }
+    .y-payment-inner-sec
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding:0 15px;
+        height: 40%;
+    }
+    .y-payment-header-sec 
+    {
+        width: 100%;
+        float: left;
+        padding: 0;
+        background:#e4198c;
+        height: 32px;
+        color: #fff;
+        font-size: 13px;
+        padding: 5px 15px;
+        line-height:20px;
+    }
+    .ya-payment-sub-bottom
+    {
+        width:100%;
+        float: left;
+        margin:0;
+        padding-top: 10px;
+    }
+    span.payment-text-left-description 
+    {
+        float: left;
+    }
+    span.payment-text-right-description 
+    {
+        float: right;
+    }
+    .y-payment-inners-sec
+    {
+        width:100%;
+        float: left;
+    }
+    .description-group
+    {
+        width:100%;
+        float: left;
+        font-size:13px;
+        color:#666;
+        line-height:18px;
+        font-weight:100;
+        padding-top: 10px;
+        
+    }
+    .subscription-sec 
+    {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 8px 0 0 0;
+    }
+    ion-select.select.select-md,
+    ion-select.select.select-wp,
+    ion-select.select.select-ios
+        
+    {
+        width: 100%;
+        float: left;
+        border: 1px solid #ddd;
+        max-width: 100%;
+        color: #666!important;
+        min-height: 30px!important;
+        height: 40px!important;
+        border-radius: 5px;
+        padding:10px!important;
+        margin:0!important;
+    }
+    .select-md .select-placeholder 
+    {
+        color:#666!important;
+        z-index: 999999;
+        width: 100%;
+        float: left;
+        line-height: 15px;
+        
+    }
+    .payment-button
+    {
+        width:100%;
+        float: left;
+        padding-top:10px;
+    }
+    .payment-btn
+    {
+        width: 100%;
+        float: left;
+        box-shadow: none;
+        font-size: 15px;
+        margin: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: inherit;
+        padding:10px 20px;
+        line-height: 16px;
+        text-transform:uppercase;
+        background-color:#e4198c;
+        color:#fff;
+        border-radius:5px!important;
+        text-transform: capitalize!important;
+        cursor: pointer;
+    }
 }
+
+
