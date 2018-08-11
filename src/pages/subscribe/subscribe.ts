@@ -1,3 +1,4 @@
+import { PaymentPage } from './../payment/payment';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
@@ -17,5 +18,9 @@ export class SubscribePage {
 
   previewPage(){
     this.navCtrl.push(HomePage);
+  }
+
+  paymentPage(){
+    this.navCtrl.push(PaymentPage);
   }
 }
