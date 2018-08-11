@@ -23,4 +23,8 @@ export class SubscribePage {
   paymentPage(){
     this.navCtrl.push(PaymentPage);
   }
+
+  openPay(){
+    this.navCtrl.push(PaymentPage);
+  }
 }
