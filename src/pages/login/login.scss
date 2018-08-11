@@ -103,7 +103,7 @@ page-login
         width: 100%;
         float: left;
         margin: 0;
-        padding:15px;
+        padding:5px;
         cursor: pointer;
     }
     .login-up-header
@@ -120,7 +120,7 @@ page-login
         width: 100%;
         float: left;
         box-shadow: none;
-        font-size: 11px;
+        font-size: 15px;
         margin: 0;
         box-sizing: border-box;
         cursor: pointer;
@@ -132,6 +132,7 @@ page-login
         color:#fff;
         margin-top:20px;
         border-radius:2px!important;
+        text-transform: capitalize!important;
     }
     .fotter-sec.row 
     {
@@ -223,5 +224,45 @@ page-login
         z-index: 999999;
         color:#e4198c!important;
         top: 11px;
+    }
+    .social-button.facebook
+    {
+            height: inherit;
+            margin: 0;
+            padding: 10px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            line-height: 16px;
+            font-size: 13px;
+            background-color: #3b5998!important;
+            box-shadow: none!important;
+            cursor: pointer;
+            border-radius:2px;
+            text-transform: capitalize!important;
+            
+    }
+    .social-button.google
+    {
+            height: inherit;
+            margin: 0;
+            padding: 10px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            line-height: 16px;
+            font-size: 13px;
+            background-color: #b84239!important;
+            box-shadow: none!important;
+            cursor: pointer;
+            border-radius:2px;
+            text-transform: capitalize!important;
+            
+    }
+    i.fa.fa-facebook,  i.fa.fa-google-plus
+    {
+        float: left;
+        padding-right: 10px;
+        line-height: 10px;
     }
 }
