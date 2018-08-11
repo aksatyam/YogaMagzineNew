@@ -1,4 +1,3 @@
-import { PaymentPage } from './../pages/payment/payment';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -37,8 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     CarouselComponent,
     SplashPage,
     PreviewPage,
-    SubscribePage,
-    PaymentPage
+    SubscribePage
   ],
   imports: [
     BrowserModule,
@@ -58,8 +56,7 @@ import { HttpClientModule } from '@angular/common/http';
     PosesPage,
     SplashPage,
     PreviewPage,
-    SubscribePage,
-    PaymentPage
+    SubscribePage
   ],
   providers: [
     StatusBar,
