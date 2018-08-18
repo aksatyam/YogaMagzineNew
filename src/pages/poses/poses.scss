@@ -126,7 +126,8 @@ page-poses
     {
         width: 100%;
         float: left;
-        position: absolute;
+        position: fixed;
+        height:90px;
         bottom: 0;
         margin: 0;
         padding: 0;
@@ -190,37 +191,55 @@ page-poses
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
         background-color: #d0037c;
     }
-    @media screen and  (min-width:320px) and (max-width:480px)
+    @media screen and  (min-width:481px) and (max-width:767px)
     {
-      
-    }
-    @media screen and  (min-width:481px) and (max-width:640px)
-    {
-    
-        
-    }
-    @media screen and  (min-width:641px) and (max-width:767px)
-    {
-       
-    
+        .poses-sub-inner-sec{height:100vh!important;}
+        span.poses-top-text{font-size:20px!important;}
+        span.poses-bottom-text-text{font-size:15px!important}
+        .poses-inner-images{height:100%;}
+        .poses-botom-sec, span.poses-header{font-size: 13px!important;line-height: 22px;}
     }
     @media screen and  (min-width:768px) and (max-width:997px)
     {
-  
+        .poses-sub-inner-sec{height:100vh!important;}
+        .poses-button{width:100%;}
+        span.poses-top-text{font-size:22px!important;}
+        span.poses-bottom-text-text{font-size:15px!important}
+        .poses-inner-images{height:100%;}
+        .poses-botom-sec, span.poses-header{font-size: 15px!important;line-height: 22px;}
+        .poses-bottom-sec{padding-top:40px;}
+    
     }
     @media screen and  (min-width:998px) and (max-width:1024px)
     {
-        
-    
+        .poses-sub-inner-sec{height:100vh!important;}
+        span.poses-top-text{font-size:22px!important;}
+        span.poses-bottom-text-text{font-size:15px!important}
+        .poses-inner-images{height:100%;}
+        .poses-botom-sec, span.poses-header{font-size: 15px!important;line-height: 22px;}
+        .poses-bottom-sec{padding-top:40px;}
     
     }
     @media screen and  (min-width:1025px) and (max-width:1280px)
     {
-  
+        .poses-sub-inner-sec{height:100vh!important;}
+        span.poses-top-text{font-size:22px!important;}
+        span.poses-bottom-text-text{font-size:15px!important}
+        .poses-inner-images{height:100%;}
+        .poses-botom-sec, span.poses-header{font-size: 15px!important;line-height: 22px;}
+        .poses-bottom-sec{padding-top:40px;}
+
+        
+        
     
     }
     @media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
     {
         .scroll-content{overflow-y: scroll!important;}
+        .poses-top-element{height:100%!important;}
+        .poses-bottom-banners{display:none!important}
+        .poses-bottom-sec{padding-top:40px;}
+        
+      
     }
 }

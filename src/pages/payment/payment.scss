@@ -230,6 +230,12 @@ page-payment
         text-transform: capitalize!important;
         cursor: pointer;
     }
+    @media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
+    {
+        .scroll-content{overflow-y: scroll!important;}
+        
+      
+    }
 }
 
 

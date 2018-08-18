@@ -62,13 +62,12 @@ page-home
         margin: 0;
         padding:8px!important;
         background-color:#e6dbec;
-        height:100%;
     }
     .y22-outer 
     {
         width: 100%;
         float: left;
-        height: calc(100vh - 75px);
+        height: calc(100vh - 175px);
         box-sizing:border-box;
     }
     .y2-home-sub-inner-sec.row 
@@ -76,7 +75,7 @@ page-home
         width: 100%;
         float: left;
         padding: 0 !important;
-        height:40%;
+        height:50%;
         margin-bottom:5px;
     }
     .y3-home-sub-inner-se2
@@ -89,16 +88,21 @@ page-home
         background-image: url(./../../assets/imgs/OffersScreen-03.png);
         background-size: cover;
         box-sizing: border-box;
-        border-radius: 0 5px 5px 0;
+        border-radius:0px 8px 8px 8px;
         
        
+    }
+    .both-outers
+    {
+        width:100%;
+        float: left;
     }
     // .yoga-banner-images
     // {************
     //     width: 100%;
     //     float: left;
     //     margin: 0;
-    //     padding: 0;
+    //     padding: 0;1
     //     height: 100%;
     //     background-image: url(./../../assets/imgs/banner.jpeg);
     //     background-size: cover;
@@ -115,7 +119,7 @@ page-home
         background-image: url(./../../assets/imgs/OffersScreen-03.png);
         background-size: cover;
         box-sizing: border-box;
-        border-radius: 0 5px 5px 0;
+        border-radius:0px 8px 8px 8px;
        
       
    }
@@ -224,7 +228,8 @@ page-home
     {
         width: 100%;
         float: left;
-        height:17%;
+        height:90px;
+        margin-top: 6px;
     }
     @media screen and  (min-width:320px) and (max-width:480px)
     {
@@ -245,6 +250,7 @@ page-home
         ion-segment-button.each-segment-tabs.segment-button.segment-activated,
         ion-segment-button.each-segment-tabs.segment-button{font-size:16px!important;}
         .yg-img{height:300px!important;}
+        .y22-outer{height:calc(100vh - 50px)!important;}
         
     }
     @media screen and  (min-width:641px) and (max-width:767px)
@@ -259,6 +265,7 @@ page-home
         ion-segment-button.each-segment-tabs.segment-button.segment-activated,
         ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
         .yg-img{height:300px!important;}
+        .y22-outer{height:calc(100vh - 40px)!important;}
     
     }
     @media screen and  (min-width:768px) and (max-width:997px)
@@ -273,6 +280,8 @@ page-home
         ion-segment-button.each-segment-tabs.segment-button.segment-activated,
         ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
         .yg-img{height:350px!important;}
+        .y22-outer{height:calc(100vh - 40px)!important;}
+        .scroll-content{overflow-y: scroll!important;}
     
     }
     @media screen and  (min-width:998px) and (max-width:1024px)
@@ -288,6 +297,7 @@ page-home
         ion-segment-button.each-segment-tabs.segment-button.segment-activated,
         ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
         .yg-img{height:400px!important;}
+        .y22-outer{height:calc(100vh - 40px)!important;}
     
     }
     @media screen and  (min-width:1025px) and (max-width:1280px)
@@ -303,10 +313,13 @@ page-home
         ion-segment-button.each-segment-tabs.segment-button.segment-activated,
         ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
         .yg-img{height:450px!important;}
+        .y22-outer{height:100vh!important;}
     
     }
     @media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
     {
         .scroll-content{overflow-y: scroll!important;}
+        .y22-outer{height:100vh!important;}
+        
     }
 }

@@ -122,15 +122,22 @@ page-subscribe
         font-weight: 600;
         color:#d0037c;
     }
+    .poses-sub-inner-element.col
+    {
+        width:100%;
+        float: left;
+        position: relative;
+    }
     span.poses-bottom-banners 
     {
         width: 100%;
         float: left;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         margin: 0;
         padding: 0;
         left: 0;
+        height:90px;
     }
     span.poses-bottom-banners img
     {
@@ -148,7 +155,7 @@ page-subscribe
         height: calc(50vh - 125px);
         margin: 0;
         padding: 5px 0px 5px 0px;
-        overflow-y: scroll;
+        overflow-y:auto;
     }
     span.poses-header
      {
@@ -299,5 +306,45 @@ page-subscribe
     i.fa.fa-play.social-icons {
         padding-right: 8px;
         float: left;
+    }
+    @media screen and  (min-width:481px) and (max-width:767px)
+    {
+        .poses-sub-inner-sec{height:100vh!important;}
+        span.poses-top-text{font-size:20px!important;}
+        span.poses-bottom-text-text{font-size:15px!important}
+    }
+    @media screen and  (min-width:768px) and (max-width:997px)
+    {
+        .poses-sub-inner-sec{height:100vh!important;}
+        .poses-button{width:100%;}
+        span.poses-top-text{font-size:22px!important;}
+        span.poses-bottom-text-text{font-size:15px!important}
+    
+    }
+    @media screen and  (min-width:998px) and (max-width:1024px)
+    {
+        .poses-sub-inner-sec{height:100vh!important;}
+        span.poses-top-text{font-size:22px!important;}
+        span.poses-bottom-text-text{font-size:15px!important}
+    
+    }
+    @media screen and  (min-width:1025px) and (max-width:1280px)
+    {
+        .poses-sub-inner-sec{height:100vh!important;}
+        span.poses-top-text{font-size:22px!important;}
+        span.poses-bottom-text-text{font-size:15px!important}
+        
+        
+    
+    }
+    @media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
+    {
+        .scroll-content{overflow-y: scroll!important;}
+        .poses-top-element{height:100%!important;}
+        .poses-bottom-banners{display:none!important}
+        span.poses-top-sec-scroll{height:100%!important;}
+        .poses-bottom-sec-elm{padding:20px 5px!important;}
+        .poses-button{width:100%;}
+      
     }
 }

@@ -9,6 +9,9 @@ import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { SplashPage } from '../pages/splash/splash';
 import { LatestIssuesPage } from '../pages/latest-issues/latest-issues';
+import { SubscribePage } from '../pages/subscribe/subscribe';
+import { PosesPage } from '../pages/poses/poses';
+import { PaymentPage } from '../pages/payment/payment';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,7 +19,7 @@ import { LatestIssuesPage } from '../pages/latest-issues/latest-issues';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =HomePage;
+  rootPage: any =PaymentPage;
 
   pages: Array<{title: string, component: any}>;
 
