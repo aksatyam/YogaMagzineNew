@@ -58,7 +58,7 @@ carousel {
         border-radius: 10px;
       }
     
-      @media screen and (max-width: 25em) 
+      @media screen and (max-width:480px) 
       {
  
     
@@ -137,4 +137,30 @@ carousel {
         padding:0;
         line-height:16px;
       }
+    
+      @media screen and  (min-width:481px) and (max-width:640px)
+      {
+      
+      }
+      @media screen and  (min-width:481px) and (max-width:767px)
+      {
+        
+      }
+      @media screen and  (min-width:768px) and (max-width:997px)
+      {
+        
+      }
+      @media screen and  (min-width:998px) and (max-width:1024px)
+      {
+        
+      }
+      @media screen and  (min-width:1025px) and (max-width:1280px)
+      {
+          
+      }
+      @media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
+      {
+          .scroll-content{overflow-y: scroll!important;}
+      }
+      
 }

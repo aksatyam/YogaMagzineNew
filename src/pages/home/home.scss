@@ -68,7 +68,7 @@ page-home
     {
         width: 100%;
         float: left;
-        height: calc(100vh - 170px);
+        height: calc(100vh - 75px);
         box-sizing:border-box;
     }
     .y2-home-sub-inner-sec.row 
@@ -76,7 +76,7 @@ page-home
         width: 100%;
         float: left;
         padding: 0 !important;
-        height:48%;
+        height:40%;
         margin-bottom:5px;
     }
     .y3-home-sub-inner-se2
@@ -94,7 +94,7 @@ page-home
        
     }
     // .yoga-banner-images
-    // {
+    // {************
     //     width: 100%;
     //     float: left;
     //     margin: 0;
@@ -125,6 +125,7 @@ page-home
         float: left;
         margin: 0;
         padding: 0!important;
+
     }
     
     .main-images
@@ -180,6 +181,7 @@ page-home
         max-width:100%;
         width:100%;
         float: left;
+        height:100%;
     }
     span.y3-text {
         position: absolute;
@@ -217,5 +219,94 @@ page-home
     span.y3-right-sec {
         width: 40%;
         float: left;
+    }
+    .y2-home-sub-inner-bottom.row 
+    {
+        width: 100%;
+        float: left;
+        height:17%;
+    }
+    @media screen and  (min-width:320px) and (max-width:480px)
+    {
+        .sliders-bottm-sec img{height:70px!important;}
+        // ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        // ion-segment-button.each-segment-tabs.segment-button{font-size:15px!important;}
+        // .yg-img{height:250px!important;}
+    }
+    @media screen and  (min-width:481px) and (max-width:640px)
+    {
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:16px!important;
+        }
+   
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:16px!important;}
+        .yg-img{height:300px!important;}
+        
+    }
+    @media screen and  (min-width:641px) and (max-width:767px)
+    {
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:16px!important;
+        }
+        .sliders-bottm-sec img{height:100px!important;}
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
+        .yg-img{height:300px!important;}
+    
+    }
+    @media screen and  (min-width:768px) and (max-width:997px)
+    {
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:18px!important;
+        }
+        .sliders-bottm-sec img{height:100px!important;}
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
+        .yg-img{height:350px!important;}
+    
+    }
+    @media screen and  (min-width:998px) and (max-width:1024px)
+    {
+        
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:18px!important;
+        }
+        .sliders-bottm-sec img{height:120px!important;}
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
+        .yg-img{height:400px!important;}
+    
+    }
+    @media screen and  (min-width:1025px) and (max-width:1280px)
+    {
+           
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:18px!important;
+        }
+        .sliders-bottm-sec img{height:120px!important;}
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
+        .yg-img{height:450px!important;}
+    
+    }
+    @media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
+    {
+        .scroll-content{overflow-y: scroll!important;}
     }
 }

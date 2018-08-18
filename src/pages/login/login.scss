@@ -265,4 +265,43 @@ page-login
         padding-right: 10px;
         line-height: 10px;
     }
+    @media screen and  (min-width:480px) and (max-width:640px)
+    {
+        .login-each-field.row{margin:5px 0!important;}
+        .social-button.facebook,.social-button.google{font-size:16px!important;}
+        .register-button{font-size:16px!important;}
+        span.already-reg{font-size:13px!important}
+    }
+    @media screen and  (min-width:481px) and (max-width:767px)
+    {
+        .login-each-field.row{margin:5px 0!important;}
+        .social-button.facebook,.social-button.google{font-size:16px!important;}
+        .register-button{font-size:16px!important;}
+        span.already-reg{font-size:13px!important}
+    }
+    @media screen and  (min-width:768px) and (max-width:997px)
+    {
+        .login-each-field.row{margin:8px 0!important;}
+        .social-button.facebook,.social-button.google{font-size:18px!important;}
+        .register-button{font-size:18px!important;}
+        span.already-reg{font-size:15px!important}
+    }
+    @media screen and  (min-width:998px) and (max-width:1024px)
+    {
+        .login-each-field.row{margin:8px 0!important;}
+        .social-button.facebook,.social-button.google{font-size:18px!important;}
+        .register-button{font-size:18px!important;}
+        span.already-reg{font-size:15px!important}
+    }
+    @media screen and  (min-width:1025px) and (max-width:1280px)
+    {
+        .login-each-field.row{margin:8px 0!important;}
+        .social-button.facebook,.social-button.google{font-size:18px!important;}
+        .register-button{font-size:18px!important;}
+        span.already-reg{font-size:15px!important}
+    }
+    @media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
+    {
+        .scroll-content{overflow-y: scroll!important;}
+    }
 }

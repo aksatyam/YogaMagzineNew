@@ -131,3 +131,36 @@ span.y3 {
 {
     display:none!important;
 }
+@media screen and  (min-width:480px) and (max-width:640px)
+{
+    .menu-each-list ul li{font-size:15px!important}
+    span.user-names{font-size:15px!important;}
+    span.y3{font-size:13px!important}
+}
+@media screen and  (min-width:481px) and (max-width:767px)
+{
+    .menu-each-list ul li{font-size:16px!important}
+    span.user-names{font-size:16x!important;}
+    span.y3{font-size:15px!important}
+}
+@media screen and  (min-width:768px) and (max-width:997px)
+{
+    .menu-each-list ul li{font-size:16px!important}
+    span.user-names{font-size:16px!important;}
+    span.y3{font-size:15px!important}
+}
+@media screen and  (min-width:998px) and (max-width:1024px)
+{
+    .menu-each-list ul li{font-size:16px!important}
+    span.user-names{font-size:16px!important;} 
+    span.y3{font-size:15px!important}
+}
+@media screen and  (min-width:1025px) and (max-width:1280px)
+{
+    .menu-each-list ul li{font-size:16px!important}
+    span.user-names{font-size:16px!important;}
+}
+@media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
+{
+    .scroll-content{overflow-y: scroll!important;}
+}

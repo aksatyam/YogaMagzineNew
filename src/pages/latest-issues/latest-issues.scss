@@ -305,5 +305,84 @@ page-latest-issues
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
         background-color: #d0037c;
     }
+    @media screen and  (min-width:320px) and (max-width:480px)
+    {
+        .sliders-bottm-sec img{height:70px!important;}
+        // ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        // ion-segment-button.each-segment-tabs.segment-button{font-size:15px!important;}
+        // .yg-img{height:250px!important;}
+    }
+    @media screen and  (min-width:481px) and (max-width:640px)
+    {
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:16px!important;
+        }
+        .sliders-bottm-sec img{height:80px!important;}
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:16px!important;}
+        .yg-img{height:300px!important;}
+    }
+    @media screen and  (min-width:641px) and (max-width:767px)
+    {
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:16px!important;
+        }
+        .sliders-bottm-sec img{height:100px!important;}
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
+        .yg-img{height:300px!important;}
+    }
+    @media screen and  (min-width:768px) and (max-width:997px)
+    {
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:18px!important;
+        }
+        .sliders-bottm-sec img{height:100px!important;}
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
+        .yg-img{height:350px!important;}
+    }
+    @media screen and  (min-width:998px) and (max-width:1024px)
+    {
+        
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:18px!important;
+        }
+        .sliders-bottm-sec img{height:120px!important;}
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
+        .yg-img{height:400px!important;}
+    }
+    @media screen and  (min-width:1025px) and (max-width:1280px)
+    {
+           
+        .y-latest-header .toolbar-title-md,
+        .y-latest-header .toolbar-title-wp,
+        .y-latest-header .toolbar-title-ios
+        {
+            font-size:18px!important;
+        }
+        .sliders-bottm-sec img{height:120px!important;}
+        ion-segment-button.each-segment-tabs.segment-button.segment-activated,
+        ion-segment-button.each-segment-tabs.segment-button{font-size:18px!important;}
+        .yg-img{height:450px!important;}
+    }
+    @media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
+    {
+        .scroll-content{overflow-y: scroll!important;}
+    }
+    
 }
 
