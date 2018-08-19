@@ -28,10 +28,9 @@ interface SlideItem {
   templateUrl: 'carousel.html'
 })
 export class CarouselComponent {
-  private currentDeg: number = 0;
-  private items: Array<SlideItem> = [];
-  //private containerWidth: number = 250;
-  private tz: number;
+  public currentDeg: number = 0;
+  public items: Array<SlideItem> = [];
+  public tz: number;
 
   @Input() autoloop: boolean = false;
   @Input() set slides(values: Array<CarouselItem>) {

@@ -9,7 +9,7 @@
           </span>
         </div>
         <span class="user-names">
-          Ashish Kumar Singh
+          YogaMagzine
         </span>
       </ion-col>
     </ion-row>
@@ -19,47 +19,24 @@
         <li menuClose *ngFor="let p of pages" (click)="openPage(p)" class="y1">
           {{p.title}}
         </li>
-        <li class="y2">
-          Offers
-        </li>
         <span class="y3">
           ACCOUNT
         </span>
-        <li class="y1">
-          LOGOUT
-        </li>
-        <li class="y1">
-          RESTORE PURCHASES
-        </li>
-        <li class="y1">
-          SUBSCRIPTIONS
-        </li>
-        <li class="y1">
-          VOCHERS
+        <li menuClose *ngFor="let a of account" (click)="openPage(a)"  class="y1">
+          {{a.title}}
         </li>
         <span class="y3">
           SETTINGS
         </span>
-        <li class="y1">
-          SETTINGS AND NOTIFICATIONS
+        <li menuClose *ngFor="let s of settings" (click)="openPage(s)"  class="y1">
+          {{s.title}}
         </li>
         <span class="y3">
           ABOUT
         </span>
-        <li class="y1">
-          MORE FORM THIS PUBLIHER
+        <li menuClose *ngFor="let ab of about" (click)="openPage(ab)"  class="y1">
+          {{ab.title}}
         </li>
-        <li class="y1">
-         TELL A FRIEND
-        </li>
-        <li class="y1">
-          TERMS AND CONDITIONS
-        </li>
-        <li class="y1">
-          PRIVACY POLICY
-        </li>
-
-
       </ul>
 
     </div>

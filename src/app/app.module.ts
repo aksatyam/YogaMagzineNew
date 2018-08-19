@@ -1,3 +1,4 @@
+import { BlankPage } from './../pages/blank/blank';
 import { PaymentPage } from './../pages/payment/payment';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -22,6 +23,7 @@ import { PreviewPage } from '../pages/preview/preview';
 import { SubscribePage } from '../pages/subscribe/subscribe';
 import { WebServicesProvider } from '../providers/web-services/web-services';
 import { HttpClientModule } from '@angular/common/http';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -38,12 +40,14 @@ import { HttpClientModule } from '@angular/common/http';
     SplashPage,
     PreviewPage,
     SubscribePage,
-    PaymentPage
+    PaymentPage,
+    BlankPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -59,7 +63,8 @@ import { HttpClientModule } from '@angular/common/http';
     SplashPage,
     PreviewPage,
     SubscribePage,
-    PaymentPage
+    PaymentPage,
+    BlankPage
   ],
   providers: [
     StatusBar,

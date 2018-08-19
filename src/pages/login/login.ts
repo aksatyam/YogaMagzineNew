@@ -1,3 +1,4 @@
+import { WebServicesProvider } from './../../providers/web-services/web-services';
 import { Component } from '@angular/core';
 import { NavController, NavParams, MenuController } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
@@ -9,7 +10,7 @@ import { LatestIssuesPage } from '../latest-issues/latest-issues';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController, public webServices: WebServicesProvider) {
     this.menuCtrl.enable(false);
   }
 
@@ -22,6 +23,19 @@ export class LoginPage {
   }
 
   openDashboard(){
-    this.navCtrl.setRoot(LatestIssuesPage);
+    this.webServices.setLoading();
+    this.webServices.postLogin('test@talha.com','123')
+    .subscribe(res=>{
+      this.webServices.removeLoading();
+      console.log(res);
+      if(res['success']){
+        this.webServices.setToken(res['api_token']);
+        this.webServices.setUserId(res['user_id']);
+        this.navCtrl.setRoot(LatestIssuesPage);
+      }
+      else{
+        this.webServices.setAlert('Attention!', res['error']);
+      }
+    });
   }
 }
