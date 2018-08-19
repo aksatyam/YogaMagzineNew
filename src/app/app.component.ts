@@ -2,16 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-import { LoginPage } from '../pages/login/login';
-import { SignupPage } from '../pages/signup/signup';
 import { SplashPage } from '../pages/splash/splash';
 import { LatestIssuesPage } from '../pages/latest-issues/latest-issues';
-import { SubscribePage } from '../pages/subscribe/subscribe';
-import { PosesPage } from '../pages/poses/poses';
-import { PaymentPage } from '../pages/payment/payment';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +20,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Latest Issues', component: LatestIssuesPage},        
+      { title: 'Latest Issues', component: 'LatestIssuesPage'},        
     ];
 
   }

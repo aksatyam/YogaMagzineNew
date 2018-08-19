@@ -1,3 +1,4 @@
+import { BlankPage } from './../pages/blank/blank';
 import { PaymentPage } from './../pages/payment/payment';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -38,7 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
     SplashPage,
     PreviewPage,
     SubscribePage,
-    PaymentPage
+    PaymentPage,
+    BlankPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,8 @@ import { HttpClientModule } from '@angular/common/http';
     SplashPage,
     PreviewPage,
     SubscribePage,
-    PaymentPage
+    PaymentPage,
+    BlankPage
   ],
   providers: [
     StatusBar,
