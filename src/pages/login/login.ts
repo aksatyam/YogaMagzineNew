@@ -27,7 +27,6 @@ export class LoginPage {
     this.webServices.postLogin('test@talha.com','123')
     .subscribe(res=>{
       this.webServices.removeLoading();
-      console.log(res);
       if(res['success']){
         this.webServices.setToken(res['api_token']);
         this.webServices.setUserId(res['user_id']);
