@@ -29,9 +29,10 @@ page-login
         padding: 0;
         margin: 0;
         background-image: url(./../../assets/imgs/login_signup_bg.png);
-        height: 100%;
+        height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
     }
     .login-up-outers
     {
@@ -39,8 +40,9 @@ page-login
         float: left;
         padding: 6px;
         position: absolute;
-        top:20%;
-        transform: translateY(-20%);
+        top: 15%;
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-15%);
     }
     .login-sub-inner-sec.grid 
     {
@@ -138,9 +140,8 @@ page-login
     {
         width: 100%;
         float: left;
-        position: absolute;
-        bottom: 0;
-        height: 30px;
+        padding-top:20px;
+       
     }
     .login-fotter-sec.col 
     {
@@ -152,12 +153,12 @@ page-login
      }
      span.already-reg 
      {
-         font-size: 11px;
+         font-size: 12px;
          float: left;
          margin: 0;
          padding: 0;
          line-height: 16px;
-         color:black;
+         color:#e4198c;;
      }
      a.login-now 
      {
@@ -168,6 +169,7 @@ page-login
          padding: 0;
          color:#e4198c!important;
          text-decoration: underline;
+         font-weight:500;
      }
     .login-with.col
     {
@@ -302,6 +304,7 @@ page-login
     }
     @media screen and  (min-width:320px) and (max-width:1280px) and (orientation:landscape)
     {
-        .scroll-content{overflow-y: scroll!important;}
+        .login-inner-sec{overflow-y: scroll!important;}
+ 
     }
 }
