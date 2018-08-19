@@ -26,7 +26,7 @@ export class WebServicesProvider {
                 public loadingCtrl: LoadingController,
                 public alertCtrl: AlertController,
                 public storage: Storage) {
-    console.log('Hello WebServicesProvider Provider');
+   
   }
 
   checkLogin(){
