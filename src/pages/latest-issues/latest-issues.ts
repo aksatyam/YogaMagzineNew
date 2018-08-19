@@ -8,10 +8,10 @@ import { HomePage } from '../home/home';
   templateUrl: 'latest-issues.html',
 })
 export class LatestIssuesPage {
-    private data: any;
-    private slides: any = [];
-    private start: number = 0;
-    private end: number = 5;
+    public data: any;
+    public slides: any = [];
+    public start: number = 0;
+    public end: number = 5;
     public selectedTab:any='Latest Issue';
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public menuCtrl: MenuController) {
