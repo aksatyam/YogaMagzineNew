@@ -10,12 +10,12 @@
 
             <div class="items-headers">
                 <span class="items-inner-headers">
-                    March 2017
+                    {{item.title}}
                 </span>
             </div>
             <ion-card (click)="selectItem(item)">
 
-                <img src="assets/imgs/August-2018.jpg" />
+                <img [src]="''+item.imgUrl" />
             </ion-card>
 
         </div>
