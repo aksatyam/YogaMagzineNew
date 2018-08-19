@@ -91,11 +91,10 @@ export class CarouselComponent {
   @Output() selectSlide = new EventEmitter();
 
   constructor(public platform: Platform, private eleRef: ElementRef) {
-    console.log('Hello CarouselComponent Component');
+   
   }
 
-  ngOnInit() {
-    //console.log("autoloop", this.autoloop); 
+  ngOnInit() { 
     if (this.autoloop) {
         let autoloopTask = setInterval(() => {
             this.onSwipeLeft();
@@ -128,7 +127,7 @@ selectItem(item:any) {
   setTimeout(() => {
       this.resetResizeStyle(item);
       this.selectSlide.emit(item);
-  },2000);
+  },200);
 }
 applyResizeStyle(item: any) {
 

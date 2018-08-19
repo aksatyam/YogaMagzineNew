@@ -19,10 +19,8 @@ export class SplashPage {
   }
 
   openPage(){
-    this.webServices.setLoading();
     this.webServices.checkLogin().then(login=>{
       console.log(login);
-      this.webServices.removeLoading();
       if(login){
         this.navCtrl.setRoot(LatestIssuesPage)
       }

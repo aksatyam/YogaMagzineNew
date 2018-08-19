@@ -9,28 +9,29 @@ import { HomePage } from '../home/home';
   templateUrl: 'latest-issues.html',
 })
 export class LatestIssuesPage {
-    public data: any;
+    public data: any=[];
     public slides: any = [];
     public start: number = 0;
     public end: number = 5;
     public selectedTab:any='Latest Issue';
-    public latestMagzine:any; 
+    public myMagzine:any=[]; 
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public menuCtrl: MenuController, public webServices: WebServicesProvider) {
     this.menuCtrl.enable(true);
+    this.webServices.getAllMagzines().then(res => this.data = res);
     this.CallData();
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LatestIssuesPage');
+    this.getSub();
   }
 
   CallData(){
-    this.webServices.setLoading();
+      this.webServices.setLoading();
     this.webServices.getAllMageZineList()
         .subscribe(res=>{
             this.webServices.removeLoading();
-            this.data = res;
+            this.webServices.setAllMagzines(res);
             this.getCurrentSlides();
         });
   }
@@ -54,11 +55,29 @@ export class LatestIssuesPage {
     this.navCtrl.push(SubscribePage);
   }
 
-  openPage(){
-      this.navCtrl.push(HomePage);
+  openPage(list){
+      this.navCtrl.push(HomePage,{list});
   }
 
-  parseData(data){
+  segmentChanged(){
+    if(this.selectedTab == 'My Magzines'){
+        console.log('my magzine');
+       this.webServices.getSubMagzine().then(res => {
+           this.myMagzine = res;
+           this.myMagzine.reverse();
+        });
+    }
+    else{
+        console.log('latest');
+        this.webServices.getAllMagzines().then(res => this.data = res);
+    }
+  }
 
+  getSub(){
+      this.myMagzine = [];
+      this.webServices.getAllSubsciptionMagzines()
+        .subscribe(res=>{
+            this.webServices.setSubMagzine(res);
+        });
   }
 }

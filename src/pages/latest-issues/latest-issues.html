@@ -29,108 +29,25 @@
       </ion-row>
       <div class="my-maz-ot">
         <div class="mz-sub-inner-sec" id="style-2">
-          <div class="my-maz-each" (click)="openPage()">
+          <div class="my-maz-each" *ngFor="let list of myMagzine" (click)="openPage(list)">
             <div class="my-mz-imag">
               <div class="yg-img">
-                <img src="assets/imgs/August-2018.jpg" class="mz-mg">
+                <img [src]="''+list.thumbnail.link" class="mz-mg">
               </div>
               <div class="y-article">
                 <span class="article">
-                  June 2018
+                  {{list.name}}
                 </span>
               </div>
-
             </div>
           </div>
-          <div class="my-maz-each" (click)="openPage()">
-            <div class="my-mz-imag">
-              <div class="yg-img">
-                <img src="assets/imgs/August-2018.jpg" class="mz-mg">
-              </div>
-              <div class="y-article">
-                <span class="article">
-                  June 2018
-                </span>
-              </div>
-
-            </div>
-          </div>
-          <div class="my-maz-each" (click)="openPage()">
-            <div class="my-mz-imag">
-              <div class="yg-img">
-                <img src="assets/imgs/August-2018.jpg" class="mz-mg">
-              </div>
-              <div class="y-article">
-                <span class="article">
-                  June 2018
-                </span>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="my-maz-each" (click)="openPage()">
-            <div class="my-mz-imag">
-              <div class="yg-img">
-                <img src="assets/imgs/August-2018.jpg" class="mz-mg">
-              </div>
-              <div class="y-article">
-                <span class="article">
-                  June 2018
-                </span>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="my-maz-each" (click)="openPage()">
-            <div class="my-mz-imag">
-              <div class="yg-img">
-                <img src="assets/imgs/August-2018.jpg" class="mz-mg">
-              </div>
-              <div class="y-article">
-                <span class="article">
-                  June 2018
-                </span>
-              </div>
-
-            </div>
-          </div>
-          <div class="my-maz-each" (click)="openPage()">
-            <div class="my-mz-imag">
-              <div class="yg-img">
-                <img src="assets/imgs/August-2018.jpg" class="mz-mg">
-              </div>
-              <div class="y-article">
-                <span class="article">
-                  June 2018
-                </span>
-              </div>
-
-            </div>
-          </div>
-          <div class="my-maz-each" (click)="openPage()">
-            <div class="my-mz-imag">
-              <div class="yg-img">
-                <img src="assets/imgs/August-2018.jpg" class="mz-mg">
-              </div>
-              <div class="y-article">
-                <span class="article">
-                  June 2018
-                </span>
-              </div>
-
-            </div>
-          </div>
-
-
         </div>
       </div>
     </div>
   </div>
 </ion-content>
 <ion-footer class="latest-issues-footer">
-  <ion-segment [(ngModel)]="selectedTab" class="tab-switch-outers">
+  <ion-segment [(ngModel)]="selectedTab" class="tab-switch-outers" (ionChange)="segmentChanged($event)">
     <ion-segment-button value="Latest Issue" class="each-segment-tabs">
       Latest Issue
     </ion-segment-button>

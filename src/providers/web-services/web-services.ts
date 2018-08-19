@@ -57,6 +57,21 @@ export class WebServicesProvider {
     this.UID = UserID;
   }
 
+  setSubMagzine(data){
+    this.storage.set('SUB_MAGZINE', data);
+  }
+
+  getSubMagzine(){
+    return this.storage.get('SUB_MAGZINE');
+  }
+
+  setAllMagzines(data){
+    this.storage.set('ALL_MAGZINE', data);
+  }
+
+  getAllMagzines(){
+    return this.storage.get('ALL_MAGZINE');
+  }
   //ALl Pages Call Methods
 
   setAlert(title, subtitle){
