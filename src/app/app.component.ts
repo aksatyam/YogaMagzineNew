@@ -1,3 +1,4 @@
+import { BlankPage } from './../pages/blank/blank';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -14,15 +15,36 @@ export class MyApp {
   rootPage: any =SplashPage;
 
   pages: Array<{title: string, component: any}>;
+  account : Array<{title: string, component: any}>;
+  settings : Array<{title: string, component: any}>;
+  about : Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Latest Issues', component: 'LatestIssuesPage'},        
+      { title: 'Latest Issues', component: LatestIssuesPage}, 
+      { title: 'Offers', component: BlankPage},        
     ];
 
+    this.account = [
+      { title: 'Logout', component: BlankPage}, 
+      { title: 'Restore Purcahses', component: BlankPage}, 
+      { title: 'Subscriptions', component: BlankPage}, 
+      { title: 'Vouchers', component: BlankPage},        
+    ];
+
+    this.settings =[
+      { title: 'Settings and Notifications', component: BlankPage},
+    ];
+
+    this.about = [
+      { title: 'More from the publisher', component: BlankPage},
+      { title: 'Tell a friend', component: BlankPage},
+      { title: 'Terms and Conditions', component: BlankPage},
+      { title: 'Privacy & Policy', component: BlankPage},
+    ];
   }
 
   initializeApp() {
@@ -37,6 +59,6 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    this.nav.setRoot(page.component,{'title': page.title});
   }
 }

@@ -1,21 +1,14 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the BlankPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-blank',
   templateUrl: 'blank.html',
 })
 export class BlankPage {
-
+  public title:any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.title = this.navParams.get('title');
   }
 
   ionViewDidLoad() {
