@@ -1,26 +1,50 @@
 import { Component, Input, Output, EventEmitter, ElementRef } from '@angular/core';
 import { Platform } from 'ionic-angular';
 
-export interface CarouselItem {
-  title: string,
-  description: string,
-  country: string,
-  imgUrl?: string,
-  backgroundImgUrl?: string,
-  color?: string,
-  outstanding: boolean
+export interface CarouselItem{
+    id: number,
+    long_desc: string,
+    name: string,
+    price: string,
+    short_desc: string,
+    subscribed: boolean,
+    created_at: CreatedAt,
+    thumbnail: ThumbNail,
+    updated_at:CreatedAt,
+    color?: string,
+    outstanding?: boolean,
+    currentPlacement: number
 }
 
 interface SlideItem {
-  idx: number,
-  title: string,
-  description: string,
-  country: string,
-  imgUrl: string,
-  backgroundImgUrl: string,
-  color: string,
-  currentPlacement: number,
-  outstanding: boolean
+    idx: number,
+    id: number,
+    long_desc: string,
+    name: string,
+    price: string,
+    short_desc: string,
+    subscribed: boolean,
+    created_at: CreatedAt,
+    thumbnail: ThumbNail,
+    updated_at:CreatedAt,
+    color?: string,
+    outstanding?: boolean
+    currentPlacement: number
+}
+
+interface CreatedAt{
+    data: string,
+    timezone: string,
+    timezone_type: number
+}
+
+interface ThumbNail{
+    created_at: CreatedAt,
+    id: number,
+    link: string,
+    name: string,
+    price: string,
+    type: string,
 }
 
 @Component({
@@ -49,13 +73,14 @@ export class CarouselComponent {
       this.items = <Array<SlideItem>>values.map((item: CarouselItem, index: number) => {
           let slideItem = {
               idx: index,
-              title: item.title,
-              description: item.description,
-              country: item.country,
-              imgUrl: item.imgUrl,
-              backgroundImgUrl: item.backgroundImgUrl,
-              color: item.color,
-              outstanding: item.outstanding,
+              id: item.id,
+              long_desc: item.long_desc,
+              name: item.name,
+              price: item.price,
+              short_desc: item.short_desc,
+              created_at: item.created_at,
+              thumbnail: item.thumbnail,
+              updated_at: item.updated_at,
               currentPlacement: degree
           };
           degree = degree + 60;

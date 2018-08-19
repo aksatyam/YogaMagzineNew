@@ -10,12 +10,12 @@
 
             <div class="items-headers">
                 <span class="items-inner-headers">
-                    {{item.title}}
+                    {{item.name}}
                 </span>
             </div>
             <ion-card (click)="selectItem(item)">
 
-                <img [src]="''+item.imgUrl" />
+                <img [src]="''+item.thumbnail.link" />
             </ion-card>
 
         </div>
