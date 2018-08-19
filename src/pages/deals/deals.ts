@@ -1,3 +1,4 @@
+import { WebServicesProvider } from './../../providers/web-services/web-services';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
@@ -7,7 +8,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class DealsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public webServices:WebServicesProvider) {
   }
 
   ionViewDidLoad() {

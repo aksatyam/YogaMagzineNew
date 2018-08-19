@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { WebServicesProvider } from './../../providers/web-services/web-services';
 
 @Component({
   selector: 'page-blank',
@@ -7,7 +8,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class BlankPage {
   public title:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public webServices:WebServicesProvider) {
     this.title = this.navParams.get('title');
   }
 
