@@ -1,6 +1,7 @@
+import { WebServicesProvider } from './../providers/web-services/web-services';
 import { BlankPage } from './../pages/blank/blank';
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, AlertController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SplashPage } from '../pages/splash/splash';
@@ -19,7 +20,7 @@ export class MyApp {
   settings : Array<{title: string, component: any}>;
   about : Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public alertCtrl: AlertController, public webServices: WebServicesProvider) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -29,7 +30,7 @@ export class MyApp {
     ];
 
     this.account = [
-      { title: 'Logout', component: BlankPage}, 
+      { title: 'Logout', component: null}, 
       { title: 'Restore Purcahses', component: BlankPage}, 
       { title: 'Subscriptions', component: BlankPage}, 
       { title: 'Vouchers', component: BlankPage},        
@@ -59,6 +60,38 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component,{'title': page.title});
+    if(page.component == null){
+      this.logoutCall();
+    }
+    else{
+      this.nav.setRoot(page.component,{'title': page.title});
+    }
+  }
+
+  logoutCall(){
+    let alert = this.alertCtrl.create({
+      title: 'Attention',
+      subTitle: 'Are you sure you want to Log Out  ?',
+      buttons: [{
+        text: 'NO',
+        handler: data=> {
+          console.log('Cancel Clicked');
+        }
+      },
+        {
+          text: 'YES',
+          handler: data=> {
+            this.webServices.setLoading();
+            this.webServices.postLogout().then(()=> {
+              setTimeout(()=> {
+                this.webServices.removeLoading();
+                location.reload();
+              }, 500);
+            });
+          }
+        }],
+      cssClass: 'alertcss'
+    });
+    alert.present();
   }
 }

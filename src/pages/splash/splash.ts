@@ -1,3 +1,5 @@
+import { LatestIssuesPage } from './../latest-issues/latest-issues';
+import { WebServicesProvider } from './../../providers/web-services/web-services';
 import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController,MenuController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
@@ -8,7 +10,7 @@ import { LoginPage } from '../login/login';
 })
 export class SplashPage {
   public loading:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public menuCtrl: MenuController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public menuCtrl: MenuController, public webServices: WebServicesProvider) {
     this.menuCtrl.enable(false);
   }
 
@@ -17,16 +19,15 @@ export class SplashPage {
   }
 
   openPage(){
-    this.loading = this.loadingCtrl.create({
-      content: 'Please wait...'
-    });
-  
-    this.loading.present();
-  
-    setTimeout(() => {
-      this.loading.dismiss();
-      this.navCtrl.setRoot(LoginPage);
-    }, 1000);
+    this.webServices.checkLogin().then(login=>{
+      console.log(login);
+      if(login){
+        this.navCtrl.setRoot(LatestIssuesPage)
+      }
+      else{
+        this.navCtrl.setRoot(LoginPage);
+      }
+    })
   }
 
 }
