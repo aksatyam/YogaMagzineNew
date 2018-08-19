@@ -19,7 +19,7 @@ import { PaymentPage } from '../pages/payment/payment';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =PaymentPage;
+  rootPage: any =SplashPage;
 
   pages: Array<{title: string, component: any}>;
 

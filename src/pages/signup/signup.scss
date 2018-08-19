@@ -138,10 +138,8 @@ page-signup
     {
         width: 100%;
         float: left;
-        position: absolute;
-        bottom: 0;
-        height: 30px;
-        background: #fff;
+        padding-top:20px;
+     
     }
    .signup-fotter-sec.col 
    {
@@ -153,7 +151,7 @@ page-signup
     }
     span.already-reg 
     {
-        font-size: 11px;
+        font-size: 12px;
         float: left;
         margin: 0;
         padding: 0;
@@ -168,6 +166,7 @@ page-signup
         margin: 0;
         padding: 0;
         color:#e4198c!important;
+        text-decoration: underline;
     }
     input::placeholder 
     {
