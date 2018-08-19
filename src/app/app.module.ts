@@ -23,6 +23,7 @@ import { PreviewPage } from '../pages/preview/preview';
 import { SubscribePage } from '../pages/subscribe/subscribe';
 import { WebServicesProvider } from '../providers/web-services/web-services';
 import { HttpClientModule } from '@angular/common/http';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
