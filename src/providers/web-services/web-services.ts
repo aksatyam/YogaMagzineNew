@@ -56,6 +56,7 @@ export class WebServicesProvider {
     this.storage.set('UID', UserID);
     this.UID = UserID;
   }
+
   //ALl Pages Call Methods
 
   setAlert(title, subtitle){
@@ -94,7 +95,7 @@ export class WebServicesProvider {
   }
 
   removeLoading(){
-    this.loading.dismiss();
+    this.loading.dismissAll();
   }
 
   getPlatform(){
@@ -117,7 +118,7 @@ export class WebServicesProvider {
     .catch(err => Observable.throw(err));
   }
 
-  //API Calling 
+  // ******************API Calling ************************** //
   //User Login
   postLogin(username,password){
     let myKeyVals={ 'email': username, 'password': password};
@@ -138,5 +139,36 @@ export class WebServicesProvider {
       this.storage.set('UID', '');
       resolve(true);
     });
+  }
+
+  //GET Promotional Banners
+  getPromotionsAndBanners(){
+    let u=this.BASE_URL+"banners"+"?api_token="+this.token;
+    return this.getData(u);   
+  }
+
+  //GET Magzine List
+  getAllMageZineList(){
+    let u =this.BASE_URL+"magzine"+"?api_token="+this.token;
+    return this.getData(u); 
+  }
+
+  //GET All Subscribe Magzines
+  getAllSubsciptionMagzines(){
+    let u=this.BASE_URL+"subscription"+"?api_token="+this.token;
+    return this.getData(u);
+  }
+
+  //GET Latest Packages
+  getLatestPakages(){
+    let u=this.BASE_URL+"latestPackages";
+    return this.getData(u);
+  }
+
+  //Get Magzine Packages
+  getMagzinePackages(MAG_ID){
+    let u=this.BASE_URL+"api"+"/"+"magzine"+"/"+MAG_ID+"/"+"packages?api_token="+this.token;
+    console.log(u);
+    return this.getData(u);
   }
 }
