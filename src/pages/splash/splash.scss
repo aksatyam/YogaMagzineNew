@@ -73,12 +73,22 @@ page-splash
         width: 100%;
         float: left;
         padding-top: 28px;
+        
+        display: flex;
+        justify-content: center;
+    }
+    span.click-to-start 
+    {
+        padding: 10px 30px;
+        float: left;
+        color:#fff;
+        border-radius: 20px;
         font-size: 13px;
         font-weight:500;
         letter-spacing: 1.2px;
         cursor: pointer;
         margin: 0;
-        color:#cf0074;
+        background-color:#cf0074;
         text-transform:uppercase;
     }
 }

@@ -86,7 +86,7 @@ page-signup
         width: 100%;
         max-width: 100%;
         position: relative;
-        color:#e4198c;;
+        color:#e4198c;
     }
     
     .sign-register-here.col 
@@ -101,13 +101,13 @@ page-signup
     }
     .sign-up-header
     {
-        font-size:14px;
+        font-size:16px;
         margin:0;
         padding:0;
         box-sizing: border-box;
         line-height:20px;
         text-transform: capitalize;
-        color:#666;
+        color:#e4198c;
     }
     .sign-register-heres.col 
     {
@@ -158,6 +158,12 @@ page-signup
         line-height: 16px;
         color:#e4198c;
     }
+    i.fa.fa-sign-in {
+        padding-left: 10px;
+        float: left;
+        line-height: 16px;
+        padding-top: 2px;
+    }
     a.login-now 
     {
         cursor: pointer;
@@ -166,6 +172,10 @@ page-signup
         margin: 0;
         padding: 0;
         color:#e4198c!important;
+     
+    }
+    a.login-now:hover
+    {
         text-decoration: underline;
     }
     input::placeholder 

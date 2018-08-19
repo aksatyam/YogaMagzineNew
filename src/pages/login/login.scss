@@ -143,6 +143,12 @@ page-login
         padding-top:20px;
        
     }
+    i.fa.fa-sign-in {
+        padding-left: 10px;
+        float: left;
+        line-height: 16px;
+        padding-top: 2px;
+    }
     .login-fotter-sec.col 
     {
          width: 100%;
@@ -168,8 +174,12 @@ page-login
          margin: 0;
          padding: 0;
          color:#e4198c!important;
-         text-decoration: underline;
+   
          font-weight:500;
+     }
+     a.login-now:hover
+     {
+        text-decoration: underline;
      }
     .login-with.col
     {
