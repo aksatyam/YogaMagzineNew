@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { DealsPage } from '../deals/deals';
 import { ViewOffersPage } from '../view-offers/view-offers';
 
@@ -8,16 +8,16 @@ import { ViewOffersPage } from '../view-offers/view-offers';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
-  constructor(public navCtrl: NavController) {
-
+  public magdata:any;
+  constructor(public navCtrl: NavController, public navParms: NavParams) {
+    this.magdata = this.navParms.get('list');    
   }
 
   openDealsPage(){
-    this.navCtrl.push(DealsPage);
+    this.navCtrl.push(DealsPage,{ list : this.magdata});
   }
 
   openViewPage(){
-    this.navCtrl.push(ViewOffersPage);
+    this.navCtrl.push(ViewOffersPage, { list : this.magdata});
   }
 }

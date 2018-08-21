@@ -26,22 +26,22 @@
   <div [ngSwitch]="offer" class="tab-switch-outers">
     <div *ngSwitchCase="'beginner'" class="each-segment-tabs">
       <ion-grid class="deals-sub-inner-sec">
-        <ion-row class="deals-each-row" (click)="openPosesPage()">
+        <ion-row class="deals-each-row" *ngFor="let b of beginer">
           <ion-col col-4 col-md-2 col-sm-2 col-lg-2 class="deals-each-elements">
             <span class="deals-each-images">
-              <img src="./../../assets/imgs/youga.jpg" />
+              <img [src]="''+b.thumbnail.link" />
             </span>
 
           </ion-col>
           <ion-col col-8 col-md-10 col-sm-10 col-lg-10 class="deals-text-elements">
             <span class="deals-each-text-elements">
               <span class="deals-inner-sec">
-                PUPPY POSE
+               {{b.short_desc}}
               </span>
-              <span class="get-now">
+              <span class="get-now" (click)="openPosesPage(b)">
                 <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
               </span>
-              <span class="forward-now">
+              <span class="forward-now" (click)="openPosesPage(b)">
                 <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
               </span>
 
@@ -56,22 +56,22 @@
     <div *ngSwitchCase="'intermediate'" class="each-segment-tabs">
       <ion-grid class="deals-sub-inner-sec">
 
-        <ion-row class="deals-each-row" (click)="openPosesPage()">
+        <ion-row class="deals-each-row" *ngFor="let i of intermediate">
           <ion-col col-4 col-md-2 col-sm-2 col-lg-2 class="deals-each-elements">
             <span class="deals-each-images">
-              <img src="./../../assets/imgs/youga.jpg" />
+              <img [src]="''+i.thumbnail.link" />
             </span>
 
           </ion-col>
           <ion-col col-8 col-md-10 col-sm-10 col-lg-10 class="deals-text-elements">
             <span class="deals-each-text-elements">
               <span class="deals-inner-sec">
-                PUPPY POSE
+               {{i.short_desc}}
               </span>
-              <span class="get-now">
+              <span class="get-now" (click)="openPosesPage(i)">
                 <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
               </span>
-              <span class="forward-now">
+              <span class="forward-now" (click)="openPosesPage(i)">
                 <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
               </span>
 
@@ -85,22 +85,22 @@
     <div *ngSwitchCase="'expert'" class="each-segment-tabs">
       <ion-grid class="deals-sub-inner-sec">
 
-        <ion-row class="deals-each-row" (click)="openPosesPage()">
+        <ion-row class="deals-each-row"  *ngFor="let e of expert">
           <ion-col col-4 col-md-2 col-sm-2 col-lg-2 class="deals-each-elements">
             <span class="deals-each-images">
-              <img src="./../../assets/imgs/youga.jpg" />
+              <img [src]="''+e.thumbnail.link" />
             </span>
 
           </ion-col>
           <ion-col col-8 col-md-10 col-sm-10 col-lg-10 class="deals-text-elements">
             <span class="deals-each-text-elements">
               <span class="deals-inner-sec">
-                PUPPY POSE
+                {{e.short_desc}}
               </span>
-              <span class="get-now">
+              <span class="get-now" (click)="openPosesPage(e)">
                 <img src="./../../assets/imgs/PoseListScreen_details.png" class="gt-now" />
               </span>
-              <span class="forward-now">
+              <span class="forward-now" (click)="openPosesPage(e)">
                 <img src="./../../assets/imgs/offersListScreen copy-02.png" class="off-light" />
               </span>
 

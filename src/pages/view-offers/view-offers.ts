@@ -1,3 +1,4 @@
+import { WebServicesProvider } from './../../providers/web-services/web-services';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { PosesPage } from '../poses/poses';
@@ -8,15 +9,44 @@ import { PosesPage } from '../poses/poses';
 })
 export class ViewOffersPage {
   public offer:any='beginner';
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public offerData:any;
+  public magData:any;
+  public beginer:any = [];
+  public intermediate:any = [];
+  public expert:any = [];
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public webServices: WebServicesProvider) {
+    this.magData = this.navParams.get('list');
+    this.webServices.setLoading();
+    this.webServices.getMagzinePackages(this.magData.id).subscribe(res => {
+      this.webServices.removeLoading();
+      this.offerData = res;
+      this.filterData(res);
+    })  
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ViewOffersPage');
   }
 
-  openPosesPage(){
-    this.navCtrl.push(PosesPage);
+  openPosesPage(val){
+    this.navCtrl.push(PosesPage , {list : val});
+  }
+
+  filterData(data:[any]){
+    console.log(data);
+    let poses = data['Poses'];
+    poses.forEach(element => {  
+      if(element.category == 'Beginner'){
+        this.beginer.push(element);
+      }
+      else if(element.category == 'Intermediate'){
+        this.intermediate.push(element);
+      }
+      else if(element.category == 'Expert'){
+        this.expert.push(element);
+      }
+    });
   }
 
 }
